@@ -1,0 +1,175 @@
+{
+  "scripts": [
+    "Dừng ngay việc trả phí cho các công cụ trợ lý đắt đỏ.",
+    "Đây là mã nguồn mở giúp bạn có đội ngũ trợ lý ảo.",
+    "Dự án mang tên Ô Pừn Bót, cực kỳ ấn tượng trên Gít Húp.",
+    "Hơn hai nghìn ngôi sao và đang tăng trưởng cực kỳ nhanh.",
+    "Không gian làm việc trên máy tính, hoàn toàn độc lập.",
+    "Chạy cùng lúc Cờ Lao, Cô Đếch, Gờ Rốc trong một màn hình.",
+    "Tự động điều phối công việc với hàng đợi tác vụ thông minh.",
+    "Các trợ lý ảo tự trao đổi file và giải quyết vấn đề.",
+    "Tích hợp khả năng tự động duyệt web và cào dữ liệu.",
+    "Bảo mật tuyệt đối, dữ liệu lưu trữ tại máy tính.",
+    "Hoàn toàn miễn phí, không tốn một đồng duy trì hàng tháng.",
+    "Cài đặt cực kỳ đơn giản với đúng một dòng lệnh duy nhất.",
+    "Hãy tải về và nâng cấp hiệu suất ngay hôm nay nhé.",
+    "Tham gia nhóm chat tele của mình ở link trong bio tiktok nhé.",
+    "Lướt xuống xíu trong trang web, là thấy link nhóm tele nhé."
+  ],
+  "scenes_meta": [
+    {
+      "badge": "01 // CẢNH BÁO CHI PHÍ",
+      "titleGold": "DỪNG TRẢ PHÍ NGAY!",
+      "titleWhite": "Tốn Tiền Cho AI Trợ Lý",
+      "centerEmoji": "🛑",
+      "stickers": [
+        {"emoji": "💸", "text": "TỐN TIỀN DỊCH VỤ", "triggerFrame": 30, "rotate": -6, "top": 40, "left": -20},
+        {"emoji": "⛔", "text": "DỪNG LẠI NGAY", "triggerFrame": 85, "rotate": 8, "bottom": 30, "right": -20}
+      ]
+    },
+    {
+      "badge": "02 // GIẢI PHÁP MỚI",
+      "titleGold": "ĐỘI NGŨ AI FREE",
+      "titleWhite": "Mã Nguồn Mở Hoàn Toàn",
+      "centerEmoji": "💎",
+      "stickers": [
+        {"emoji": "💎", "text": "KHO BÁU FREE", "triggerFrame": 35, "rotate": 6, "top": 35, "right": -20},
+        {"emoji": "🤖", "text": "ĐỘI NGŨ AI TRỢ LÝ", "triggerFrame": 90, "rotate": -6, "bottom": 30, "left": -20}
+      ]
+    },
+    {
+      "badge": "03 // DỰ ÁN GITHUB",
+      "titleGold": "OPENBOT",
+      "titleWhite": "Workspace Cho AI Teammates",
+      "image": "assets/nightly-labs_openbot_github_repo.png",
+      "stickers": [
+        {"emoji": "🔥", "text": "TRENDING REPO", "triggerFrame": 30, "rotate": -5, "top": -24, "left": 30},
+        {"emoji": "💻", "text": "DESKTOP APP", "triggerFrame": 85, "rotate": 6, "bottom": -24, "right": 30}
+      ]
+    },
+    {
+      "badge": "04 // ĐÓN NHẬN MẠNH MẼ",
+      "titleGold": "⭐ 2,138 STARS",
+      "titleWhite": "Cộng Đồng Đón Nhận",
+      "centerEmoji": "🌟",
+      "stickers": [
+        {"emoji": "⭐", "text": "2.1K STARS", "triggerFrame": 30, "rotate": -6, "top": -24, "left": 30},
+        {"emoji": "🚀", "text": "TĂNG TRƯỞNG NHANH", "triggerFrame": 80, "rotate": 6, "bottom": -24, "right": 30}
+      ]
+    },
+    {
+      "badge": "05 // WORKSPACE CỤC BỘ",
+      "titleGold": "LOCAL WORKSPACE",
+      "titleWhite": "Không Gian Làm Việc Trực Tiếp",
+      "image": "assets/nightly-labs_openbot_website.png",
+      "stickers": [
+        {"emoji": "🖥️", "text": "LOCAL DESKTOP", "triggerFrame": 35, "rotate": 6, "top": -24, "right": 30},
+        {"emoji": "⚡", "text": "ĐỘC LẬP 100%", "triggerFrame": 90, "rotate": -6, "bottom": -24, "left": 30}
+      ]
+    },
+    {
+      "badge": "06 // ĐA MÔ HÌNH HÀNG ĐẦU",
+      "titleGold": "CLAUDE + CODEX + GROK",
+      "titleWhite": "Chạy Cùng Lúc Trong 1 UI",
+      "image": "assets/nightly-labs_openbot_tasks.png",
+      "stickers": [
+        {"emoji": "🧠", "text": "ĐA MÔ HÌNH AI", "triggerFrame": 35, "rotate": -6, "top": -24, "left": 30},
+        {"emoji": "🎯", "text": "1 MÀN HÌNH DUY NHẤT", "triggerFrame": 85, "rotate": 7, "bottom": -24, "right": 30}
+      ]
+    },
+    {
+      "badge": "07 // TỰ ĐỘNG ĐIỀU PHỐI",
+      "titleGold": "TASK QUEUES",
+      "titleWhite": "Hàng Đợi Tác Vụ Thông Minh",
+      "image": "assets/nightly-labs_openbot_features.png",
+      "stickers": [
+        {"emoji": "📋", "text": "HÀNG ĐỢI TASK", "triggerFrame": 35, "rotate": 6, "top": -24, "right": 30},
+        {"emoji": "🤖", "text": "AUTO WORKFLOW", "triggerFrame": 85, "rotate": -7, "bottom": -24, "left": 30}
+      ]
+    },
+    {
+      "badge": "08 // AI PHỐI HỢP CÙNG NHAU",
+      "titleGold": "AGENT COLLABORATION",
+      "titleWhite": "Tự Đổi File & Giải Quyết Lỗi",
+      "image": "assets/nightly-labs_openbot_workflow.png",
+      "stickers": [
+        {"emoji": "🤝", "text": "CỘNG TÁC AGENT", "triggerFrame": 35, "rotate": -7, "top": -24, "left": 30},
+        {"emoji": "📁", "text": "CHIA SẺ FILE TỰ ĐỘNG", "triggerFrame": 85, "rotate": 6, "bottom": -24, "right": 30}
+      ]
+    },
+    {
+      "badge": "09 // TỰ ĐỘNG DUYỆT WEB",
+      "titleGold": "BROWSER CONTROL",
+      "titleWhite": "Tự Động Mở Trình Duyệt & Cào Data",
+      "image": "assets/nightly-labs_openbot_terminal.png",
+      "stickers": [
+        {"emoji": "🌐", "text": "TỰ DUYỆT WEB", "triggerFrame": 35, "rotate": 7, "top": -24, "right": 30},
+        {"emoji": "📊", "text": "CÀO DATA TỰ ĐỘNG", "triggerFrame": 85, "rotate": -6, "bottom": -24, "left": 30}
+      ]
+    },
+    {
+      "badge": "10 // BẢO MẬT TUYỆT ĐỐI",
+      "titleGold": "BẢO MẬT DỮ LIỆU",
+      "titleWhite": "Lưu Trữ 100% Cục Bộ",
+      "centerEmoji": "🛡️",
+      "stickers": [
+        {"emoji": "🛡️", "text": "BẢO MẬT 100%", "triggerFrame": 30, "rotate": -6, "top": 35, "left": -20},
+        {"emoji": "💾", "text": "LƯU TRỮ LOCAL", "triggerFrame": 80, "rotate": 6, "bottom": 30, "right": -20}
+      ]
+    },
+    {
+      "badge": "11 // 100% MIỄN PHÍ",
+      "titleGold": "FREE VĨNH VIỄN",
+      "titleWhite": "0 Đồng Chi Phí Duy Trì",
+      "centerEmoji": "🎁",
+      "stickers": [
+        {"emoji": "🎉", "text": "HOÀN TOÀN FREE", "triggerFrame": 30, "rotate": 8, "top": 35, "right": -20},
+        {"emoji": "0️⃣", "text": "0 ĐỒNG CHI PHÍ", "triggerFrame": 80, "rotate": -6, "bottom": 35, "left": -20}
+      ]
+    },
+    {
+      "badge": "12 // CÀI ĐẶT 1 DÒNG LỆNH",
+      "titleGold": "CÀI ĐẶT 1 DÒNG",
+      "titleWhite": "Clone & Trải Nghiệm Ngay",
+      "command": "git clone https://github.com/nightly-labs/openbot.git",
+      "stickers": [
+        {"emoji": "💻", "text": "1 DÒNG LỆNH", "triggerFrame": 30, "rotate": -6, "top": 35, "left": -20},
+        {"emoji": "⏱️", "text": "CHẠY TRONG 1 PHÚT", "triggerFrame": 80, "rotate": 7, "bottom": 35, "right": -20}
+      ]
+    },
+    {
+      "badge": "13 // NÂNG CẤP HIỆU SUẤT",
+      "titleGold": "X10 NĂNG SUẤT",
+      "titleWhite": "Sở Hữu Đội Ngũ AI Ngay",
+      "centerEmoji": "🚀",
+      "stickers": [
+        {"emoji": "🚀", "text": "X10 HIỆU SUẤT", "triggerFrame": 30, "rotate": 8, "top": 40, "right": -20},
+        {"emoji": "🔥", "text": "TRẢI NGHIỆM NGAY", "triggerFrame": 80, "rotate": -6, "bottom": 35, "left": -20}
+      ]
+    },
+    {
+      "badge": "14 // THAM GIA TELEGRAM",
+      "titleGold": "LƯU VIDEO NGAY",
+      "titleWhite": "Tham Gia Nhóm Chat Tele",
+      "bullets": [
+        ["Link nhóm nằm trong BIO TikTok", "#FFCC00"],
+        ["Cập nhật repo AI đỉnh mỗi ngày", "#FFFFFF"],
+        ["Thảo luận cùng cộng đồng coder", "#FFFFFF"]
+      ],
+      "stickers": [
+        {"emoji": "📌", "text": "LƯU VIDEO LẠI", "triggerFrame": 30, "rotate": -6, "top": 35, "left": -20},
+        {"emoji": "💬", "text": "NHÓM CHAT TELE", "triggerFrame": 80, "rotate": 7, "bottom": 40, "right": -20}
+      ]
+    },
+    {
+      "badge": "15 // HƯỚNG DẪN BIO TIKTOK",
+      "titleGold": "LINK TRONG BIO",
+      "titleWhite": "Lướt Xuống Xíu Là Thấy",
+      "centerEmoji": "👇",
+      "stickers": [
+        {"emoji": "👇", "text": "VÀO BIO TIKTOK", "triggerFrame": 30, "rotate": 8, "top": 40, "right": -20},
+        {"emoji": "✨", "text": "LINK Ở DƯỚI NHÉ", "triggerFrame": 80, "rotate": -7, "bottom": 35, "left": -20}
+      ]
+    }
+  ]
+}

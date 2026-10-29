@@ -1,0 +1,11 @@
+# Danh sách repo GitHub cần làm video TikTok hàng loạt
+# Mỗi dòng 1 link (hoặc owner/repo), bỏ dấu # để kích hoạt
+
+# https://github.com/facebook/react
+# https://github.com/vercel/next.js
+#https://github.com/JetBrains/thinkrail
+#https://github.com/obra/superpowers
+https://github.com/macro-inc/macro
+https://github.com/hmjz100/LinkSwift
+https://github.com/ruvnet/RuView
+https://github.com/xiaolai/the-craft-of-selfteaching

@@ -1,0 +1,187 @@
+{
+  "scripts": [
+    "Bạn vẫn đang tốn tiền thuê máy chủ chạy trợ lý ảo?",
+    "Đây là mã nguồn mở giúp biến máy tính thành máy chủ.",
+    "Dự án mang tên Sin Đi, cực kỳ bùng nổ trên Gít Húp.",
+    "Hơn bảy nghìn ba trăm ngôi sao chỉ trong thời gian ngắn.",
+    "Giao diện tuyệt đẹp, kết nối máy tính và điện thoại cùng lúc.",
+    "Làm việc dở trên máy tính, mở điện thoại làm tiếp liền mạch.",
+    "Chạy cùng lúc Cờ Lao, Cô Đếch và nhiều mô hình khác.",
+    "Tận dụng sức mạnh máy nhà bạn, không tốn tiền thuê máy chủ.",
+    "Tích hợp tính năng điều khiển màn hình máy tính từ xa.",
+    "Các trợ lý ảo tự phân chia công việc và sửa lỗi.",
+    "Dữ liệu nằm trọn tại máy tính, hoàn toàn miễn phí trọn đời.",
+    "Cài đặt cực kỳ nhanh chóng qua một dòng lệnh duy nhất.",
+    "Tải ngay Sin Đi về để nâng cấp hiệu suất làm việc nhé.",
+    "Tham gia nhóm chat tele của mình ở link trong bio tiktok nhé.",
+    "Lướt xuống xíu trong trang web, là thấy link nhóm tele nhé."
+  ],
+  "scenes_meta": [
+    {
+      "badge": "01 // CẢNH BÁO CHI PHÍ",
+      "titleGold": "TỐN TIỀN CLOUD?",
+      "titleWhite": "Thuê Server Chạy AI Trợ Lý",
+      "centerEmoji": "💸",
+      "stickers": [
+        {"emoji": "🛑", "text": "DỪNG TRẢ PHÍ", "triggerFrame": 30, "rotate": -6, "top": -24, "left": 30},
+        {"emoji": "💸", "text": "TỐN TIỀN SERVER", "triggerFrame": 85, "rotate": 7, "bottom": -24, "right": 30}
+      ]
+    },
+    {
+      "badge": "02 // GIẢI PHÁP MỚI",
+      "titleGold": "MÃ NGUỒN MỞ",
+      "titleWhite": "Biến PC Thành Server AI",
+      "centerEmoji": "💡",
+      "stickers": [
+        {"emoji": "💎", "text": "FREE TRỌN ĐỜI", "triggerFrame": 30, "rotate": 6, "top": -24, "right": 30},
+        {"emoji": "⚡", "text": "KHÔNG CẦN CLOUD", "triggerFrame": 85, "rotate": -6, "bottom": -24, "left": 30}
+      ]
+    },
+    {
+      "badge": "03 // DỰ ÁN GITHUB",
+      "titleGold": "CINDY AI AGENT",
+      "titleWhite": "Mã Nguồn Mở Cực Đỉnh",
+      "image": "assets/makecindy_cindy_github_repo.png",
+      "stickers": [
+        {"emoji": "🔥", "text": "TRENDING REPO", "triggerFrame": 30, "rotate": -5, "top": -24, "left": 30},
+        {"emoji": "🤖", "text": "AI AGENT", "triggerFrame": 85, "rotate": 6, "bottom": -24, "right": 30}
+      ]
+    },
+    {
+      "badge": "04 // CỘNG ĐỒNG ĐÓN NHẬN",
+      "titleGold": "⭐ 7,328 STARS",
+      "titleWhite": "Tăng Trưởng Thần Tốc",
+      "centerEmoji": "🌟",
+      "stickers": [
+        {"emoji": "⭐", "text": "7.3K STARS", "triggerFrame": 30, "rotate": -7, "top": -24, "left": 30},
+        {"emoji": "🚀", "text": "VIRAL GITHUB", "triggerFrame": 80, "rotate": 6, "bottom": -24, "right": 30}
+      ]
+    },
+    {
+      "badge": "05 // GIAO DIỆN CHÍNH",
+      "titleGold": "CINDY DESKTOP",
+      "titleWhite": "Think It. Consider It Done.",
+      "image": "assets/makecindy_cindy_website.png",
+      "stickers": [
+        {"emoji": "✨", "text": "UI TUYỆT ĐẸP", "triggerFrame": 30, "rotate": 6, "top": -24, "right": 30},
+        {"emoji": "💻", "text": "DESKTOP APP", "triggerFrame": 85, "rotate": -6, "bottom": -24, "left": 30}
+      ]
+    },
+    {
+      "badge": "06 // ĐA THIẾT BỊ LIỀN MẠCH",
+      "titleGold": "ALL YOUR DEVICES",
+      "titleWhite": "Kết Nối PC, Laptop & Mobile",
+      "image": "assets/makecindy_cindy_website_features.png",
+      "stickers": [
+        {"emoji": "📱", "text": "PC + MOBILE", "triggerFrame": 30, "rotate": -6, "top": -24, "left": 30},
+        {"emoji": "🔄", "text": "SYNC LIỀN MẠCH", "triggerFrame": 85, "rotate": 7, "bottom": -24, "right": 30}
+      ]
+    },
+    {
+      "badge": "07 // ĐA MÔ HÌNH HÀNG ĐẦU",
+      "titleGold": "MULTI-HARNESS",
+      "titleWhite": "Claude Code + Codex + Pi",
+      "bullets": [
+        ["Tích hợp sẵn Claude Code đỉnh cao", "#FFCC00"],
+        ["Chạy song song Codex và Pi agent", "#FFFFFF"],
+        ["Chuyển đổi linh hoạt trong 1 cửa sổ", "#FFFFFF"]
+      ],
+      "stickers": [
+        {"emoji": "🧠", "text": "ĐA MÔ HÌNH AI", "triggerFrame": 30, "rotate": 6, "top": -24, "right": 30},
+        {"emoji": "⚡", "text": "CLAUDE + CODEX", "triggerFrame": 85, "rotate": -6, "bottom": -24, "left": 30}
+      ]
+    },
+    {
+      "badge": "08 // KHÔNG TỐN TIỀN SERVER",
+      "titleGold": "YOUR COMPUTER",
+      "titleWhite": "Máy Nhà Bạn Là Server",
+      "image": "assets/makecindy_cindy_website_workflow.png",
+      "stickers": [
+        {"emoji": "🏠", "text": "LOCAL SERVER", "triggerFrame": 30, "rotate": -6, "top": -24, "left": 30},
+        {"emoji": "💰", "text": "0 ĐỒNG CHI PHÍ", "triggerFrame": 85, "rotate": 6, "bottom": -24, "right": 30}
+      ]
+    },
+    {
+      "badge": "09 // ĐIỀU KHIỂN TỪ XA",
+      "titleGold": "REMOTE DESKTOP",
+      "titleWhite": "Mở App & Thao Tác Từ Điện Thoại",
+      "bullets": [
+        ["Xem màn hình PC trực tiếp từ phone", "#FFFFFF"],
+        ["Gõ phím và điều khiển app từ xa", "#FFCC00"],
+        ["Không cần cấu hình port forwarding", "#FFFFFF"]
+      ],
+      "stickers": [
+        {"emoji": "📱", "text": "REMOTE CONTROL", "triggerFrame": 30, "rotate": 7, "top": -24, "right": 30},
+        {"emoji": "🖥️", "text": "ĐIỀU KHIỂN PC", "triggerFrame": 85, "rotate": -7, "bottom": -24, "left": 30}
+      ]
+    },
+    {
+      "badge": "10 // AGENT TEAMWORK",
+      "titleGold": "TEAM OF AGENTS",
+      "titleWhite": "Tự Chia Việc & Sửa Lỗi",
+      "bullets": [
+        ["Phân bổ việc cho từng bot chuyên biệt", "#FFFFFF"],
+        ["Tự động chia sẻ file và context", "#FFCC00"],
+        ["Tự review và kiểm tra lỗi code", "#FFFFFF"]
+      ],
+      "stickers": [
+        {"emoji": "🤝", "text": "CỘNG TÁC BOT", "triggerFrame": 30, "rotate": -6, "top": -24, "left": 30},
+        {"emoji": "🤖", "text": "ĐỘI NGŨ AI", "triggerFrame": 85, "rotate": 6, "bottom": -24, "right": 30}
+      ]
+    },
+    {
+      "badge": "11 // BẢO MẬT DỮ LIỆU",
+      "titleGold": "100% CỤC BỘ",
+      "titleWhite": "Dữ Liệu Thuộc Về Bạn",
+      "centerEmoji": "🛡️",
+      "stickers": [
+        {"emoji": "🔒", "text": "BẢO MẬT 100%", "triggerFrame": 30, "rotate": 6, "top": -24, "right": 30},
+        {"emoji": "🆓", "text": "FREE TRỌN ĐỜI", "triggerFrame": 80, "rotate": -6, "bottom": -24, "left": 30}
+      ]
+    },
+    {
+      "badge": "12 // CÀI ĐẶT NHANH GỌN",
+      "titleGold": "CÀI ĐẶT 1 DÒNG",
+      "titleWhite": "Tải Về Hoặc Clone Ngay",
+      "command": "git clone https://github.com/makecindy/cindy.git",
+      "stickers": [
+        {"emoji": "💻", "text": "1 DÒNG LỆNH", "triggerFrame": 30, "rotate": -6, "top": -24, "left": 30},
+        {"emoji": "⚡", "text": "CHẠY NGAY", "triggerFrame": 80, "rotate": 7, "bottom": -24, "right": 30}
+      ]
+    },
+    {
+      "badge": "13 // NÂNG CẤP HIỆU SUẤT",
+      "titleGold": "X10 HIỆU SUẤT",
+      "titleWhite": "Sở Hữu Cindy Ngay Hôm Nay",
+      "centerEmoji": "🚀",
+      "stickers": [
+        {"emoji": "🚀", "text": "X10 NĂNG SUẤT", "triggerFrame": 30, "rotate": 8, "top": -24, "right": 30},
+        {"emoji": "🔥", "text": "TRẢI NGHIỆM NGAY", "triggerFrame": 80, "rotate": -6, "bottom": -24, "left": 30}
+      ]
+    },
+    {
+      "badge": "14 // THAM GIA TELEGRAM",
+      "titleGold": "LƯU VIDEO NGAY",
+      "titleWhite": "Tham Gia Nhóm Chat Tele",
+      "bullets": [
+        ["Link nhóm nằm trong BIO TikTok", "#FFCC00"],
+        ["Cập nhật repo AI đỉnh mỗi ngày", "#FFFFFF"],
+        ["Thảo luận cùng cộng đồng coder", "#FFFFFF"]
+      ],
+      "stickers": [
+        {"emoji": "📌", "text": "LƯU VIDEO LẠI", "triggerFrame": 30, "rotate": -6, "top": -24, "left": 30},
+        {"emoji": "💬", "text": "NHÓM CHAT TELE", "triggerFrame": 80, "rotate": 7, "bottom": -24, "right": 30}
+      ]
+    },
+    {
+      "badge": "15 // HƯỚNG DẪN BIO TIKTOK",
+      "titleGold": "LINK TRONG BIO",
+      "titleWhite": "Lướt Xuống Xíu Là Thấy",
+      "centerEmoji": "👇",
+      "stickers": [
+        {"emoji": "👇", "text": "VÀO BIO TIKTOK", "triggerFrame": 30, "rotate": 8, "top": -24, "right": 30},
+        {"emoji": "✨", "text": "LINK Ở DƯỚI NHÉ", "triggerFrame": 80, "rotate": -7, "bottom": -24, "left": 30}
+      ]
+    }
+  ]
+}

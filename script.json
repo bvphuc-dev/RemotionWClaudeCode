@@ -1,0 +1,79 @@
+{
+  "brief": {
+    "what_it_is": "Xưởng làm game ảo gồm 49 trợ lý AI giúp người dùng tự tạo trò chơi",
+    "input": "Ý tưởng game ngắn gọn bằng văn bản",
+    "output": "Một tựa game hoàn chỉnh chơi thử được ngay trên máy tính",
+    "problem": "Trước đây làm game phải thuê studio cả chục người tốn hàng trăm triệu và mất cả năm",
+    "concrete_example": "49 trợ lý ảo tự chia việc từ viết kịch bản, vẽ hình, làm nhạc đến kiểm thử game",
+    "evidence": "Turn a single Claude Code session into a full game development studio. 49 agents. 74 skills."
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "text": "Tự làm một trò chơi hoàn chỉnh mà không cần biết lập trình?",
+      "on_screen_keyword": "TỰ LÀM GAME?",
+      "visual_hint": "Một người ngồi trước màn hình game"
+    },
+    {
+      "id": 2,
+      "text": "Dự án Claude Code Game Studios từ Donchitos.",
+      "on_screen_keyword": "CLAUDE GAME STUDIOS",
+      "visual_hint": "Logo studio game AI Donchitos"
+    },
+    {
+      "id": 3,
+      "text": "Dự án đạt gần hai mươi chín nghìn ngôi sao.",
+      "on_screen_keyword": "28.9K STARS",
+      "visual_hint": "Ảnh chụp màn hình trang GitHub dự án"
+    },
+    {
+      "id": 4,
+      "text": "Xưởng game ảo giúp bạn tự làm trò chơi không tốn tiền thuê ngoài.",
+      "on_screen_keyword": "XƯỞNG GAME ẢO",
+      "visual_hint": "Mô hình xưởng làm game với các nhân viên ảo"
+    },
+    {
+      "id": 5,
+      "text": "Chỉ cần đưa ý tưởng, máy tự nhả ra game chơi được ngay.",
+      "on_screen_keyword": "VÀO Ý TƯỞNG, RA GAME",
+      "visual_hint": "Gõ ý tưởng một dòng, game xuất hiện trên màn hình"
+    },
+    {
+      "id": 6,
+      "text": "Bốn mươi chín trợ lý ảo tự vẽ hình, làm nhạc, hoàn thành game.",
+      "on_screen_keyword": "49 TRỢ LÝ ẢO",
+      "visual_hint": "Danh sách 49 vai trò đạo diễn, họa sĩ, nhạc sĩ AI"
+    },
+    {
+      "id": 7,
+      "text": "Dành cho người mê sáng tạo nhưng sợ chi phí hàng trăm triệu.",
+      "on_screen_keyword": "TIẾT KIỆM TRĂM TRIỆU",
+      "visual_hint": "Người dùng hào hứng chơi thử game vừa tạo"
+    },
+    {
+      "id": 8,
+      "text": "Hoàn toàn miễn phí, không tốn một đồng.",
+      "on_screen_keyword": "0 ĐỒNG CHI PHÍ",
+      "visual_hint": "Huy hiệu 0 đồng miễn phí trọn đời"
+    },
+    {
+      "id": 9,
+      "text": "Tải về dùng ngay chỉ với một dòng lệnh.",
+      "on_screen_keyword": "1 DÒNG LỆNH",
+      "visual_hint": "Lệnh git clone chạy trên màn hình"
+    },
+    {
+      "id": 10,
+      "text": "Xem hướng dẫn chi tiết ở bio nhé. Tham gia nhóm chat tele của mình ở link trong bio tiktok nhé.",
+      "on_screen_keyword": "LINK Ở BIO",
+      "visual_hint": "Mũi tên chỉ vào bio TikTok và nhóm Telegram"
+    }
+  ],
+  "warnings": [],
+  "tiktok_post": {
+    "title": "Tự tạo một tựa game hoàn chỉnh mà không cần thuê cả studio?",
+    "caption": "Biến Claude Code thành xưởng làm game với 49 trợ lý ảo. Link nhóm tele cộng đồng trong bio nhé!",
+    "hashtags": ["#ai", "#claudecode", "#gamestudios", "#gamedev", "#laptrinh", "#learnontiktok"],
+    "tiktok_copy_line": "Tự tạo một tựa game hoàn chỉnh mà không cần thuê cả studio? #ai #claudecode #gamestudios #gamedev #laptrinh #learnontiktok"
+  }
+}

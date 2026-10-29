@@ -1,0 +1,231 @@
+{
+  "tiktok_post": {
+    "title": "GIA SƯ AI DEEPTUTOR THAY THẾ KHÓA HỌC TRIỆU ĐỒNG! 🔥",
+    "caption": "Dự án DeepTutor gây bão GitHub với hơn 45.000 stars. Tự động lên lộ trình học tập, giải bài tập và luyện thi trọn đời hoàn toàn miễn phí. Link nhóm tele tài liệu trong bio nhé!",
+    "hashtags": [
+      "#ai",
+      "#deeptutor",
+      "#github",
+      "#hoctap",
+      "#coding",
+      "#laptrinh",
+      "#learnontiktok"
+    ]
+  },
+  "scripts": [
+    "Dừng lại ngay nếu vẫn tốn tiền thuê gia sư đắt đỏ.",
+    "Đây là gia sư A I cá nhân hóa miễn phí đỉnh cao.",
+    "Dự án mang tên Đíp Tiu Tơ, cực hot trên Gít Húp.",
+    "Repo thu hút hơn bốn mươi lăm nghìn ngôi sao uy tín.",
+    "Giao diện hiện đại, tự động vạch lộ trình học tập chi tiết.",
+    "Giải bài tập, phân tích tài liệu và luyện thi mọi cấp độ.",
+    "Mã nguồn mở hoàn toàn miễn phí, học tập không giới hạn.",
+    "Cài đặt cực nhanh chỉ với lệnh píp inxto đíp tiu tơ.",
+    "Tham gia nhóm chat tele của mình ở link trong bio tiktok nhé.",
+    "Lướt xuống xíu trong trang web, là thấy link nhóm tele nhé."
+  ],
+  "scenes_meta": [
+    {
+      "badge": "01 // CẢNH BÁO CHI PHÍ",
+      "titleGold": "DỪNG THUÊ GIA SƯ!",
+      "titleWhite": "Đừng Tốn Tiền Triệu Cho Khóa Học",
+      "centerEmoji": "🛑",
+      "stickers": [
+        {
+          "emoji": "💸",
+          "text": "TỐN TIỀN TRIỆU",
+          "triggerFrame": 15,
+          "rotate": -6,
+          "top": -24,
+          "left": 30
+        },
+        {
+          "emoji": "⛔",
+          "text": "DỪNG LẠI NGAY",
+          "triggerFrame": 45,
+          "rotate": 8,
+          "bottom": -24,
+          "right": 30
+        }
+      ]
+    },
+    {
+      "badge": "02 // GIẢI PHÁP AI ĐỈNH CAO",
+      "titleGold": "GIA SƯ AI MIỄN PHÍ",
+      "titleWhite": "Lộ Trình Cá Nhân Hóa Trọn Đời",
+      "centerEmoji": "🎓",
+      "stickers": [
+        {
+          "emoji": "🤖",
+          "text": "GIA SƯ AI",
+          "triggerFrame": 15,
+          "rotate": 6,
+          "top": -24,
+          "right": 30
+        },
+        {
+          "emoji": "⚡",
+          "text": "FREE TRỌN ĐỜI",
+          "triggerFrame": 45,
+          "rotate": -6,
+          "bottom": -24,
+          "left": 30
+        }
+      ]
+    },
+    {
+      "badge": "03 // DỰ ÁN GITHUB",
+      "titleGold": "DEEPTUTOR AI",
+      "titleWhite": "Tác Giả: @HKUDS Lab",
+      "image": "assets/deeptutor_website.png",
+      "stickers": [
+        {
+          "emoji": "🔥",
+          "text": "TRENDING #1",
+          "triggerFrame": 15,
+          "rotate": -5,
+          "top": -24,
+          "left": 30
+        }
+      ]
+    },
+    {
+      "badge": "04 // UY TÍN CỘNG ĐỒNG",
+      "titleGold": "⭐ 45,500+ STARS",
+      "titleWhite": "Cộng Đồng Toàn Cầu Tin Dùng",
+      "centerEmoji": "🌟",
+      "stickers": [
+        {
+          "emoji": "🚀",
+          "text": "VIRAL GITHUB",
+          "triggerFrame": 20,
+          "rotate": 7,
+          "bottom": -24,
+          "right": 30
+        }
+      ]
+    },
+    {
+      "badge": "05 // GIAO DIỆN & LỘ TRÌNH",
+      "titleGold": "LỘ TRÌNH THÔNG MINH",
+      "titleWhite": "Học Tập Trực Quan Theo Mục Tiêu",
+      "image": "assets/hkuds_deeptutor_asset_1.png",
+      "stickers": [
+        {
+          "emoji": "📚",
+          "text": "LỘ TRÌNH CHUẨN",
+          "triggerFrame": 15,
+          "rotate": 6,
+          "top": -24,
+          "right": 30
+        }
+      ]
+    },
+    {
+      "badge": "06 // TÍNH NĂNG ĐỘT PHÁ",
+      "titleGold": "ÔN THI & GIẢI BÀI",
+      "titleWhite": "Trợ Lý Học Tập Toàn Diện",
+      "bullets": [
+        [
+          "Tự động giải đáp và kèm 1-1",
+          "#FFCC00"
+        ],
+        [
+          "Đọc tài liệu PDF và video bài giảng",
+          "#FFFFFF"
+        ],
+        [
+          "Ngân hàng câu hỏi luyện thi đa ngành",
+          "#FFFFFF"
+        ]
+      ],
+      "stickers": [
+        {
+          "emoji": "💡",
+          "text": "KÈM 1-1 24/7",
+          "triggerFrame": 20,
+          "rotate": -6,
+          "top": -24,
+          "left": 30
+        }
+      ]
+    },
+    {
+      "badge": "07 // 100% MIỄN PHÍ",
+      "titleGold": "0 ĐỒNG CHI PHÍ",
+      "titleWhite": "Không Cần Đăng Ký Khóa Học Đắt Tiền",
+      "centerEmoji": "💰",
+      "stickers": [
+        {
+          "emoji": "🆓",
+          "text": "MÃ NGUỒN MỞ",
+          "triggerFrame": 20,
+          "rotate": -6,
+          "bottom": -24,
+          "left": 30
+        }
+      ]
+    },
+    {
+      "badge": "08 // CÀI ĐẶT 1 DÒNG LỆNH",
+      "titleGold": "CÀI ĐẶT 1 DÒNG",
+      "titleWhite": "Chạy Ngay Trong Terminal",
+      "command": "pip install -U deeptutor",
+      "stickers": [
+        {
+          "emoji": "💻",
+          "text": "1 DÒNG DUY NHẤT",
+          "triggerFrame": 15,
+          "rotate": -6,
+          "top": -24,
+          "left": 30
+        }
+      ]
+    },
+    {
+      "badge": "09 // THAM GIA TELEGRAM",
+      "titleGold": "LƯU VIDEO NGAY",
+      "titleWhite": "Tham Gia Nhóm Chat Tele",
+      "bullets": [
+        [
+          "Link nhóm nằm trong BIO TikTok",
+          "#FFCC00"
+        ],
+        [
+          "Nhận prompt và repo AI xịn mỗi ngày",
+          "#FFFFFF"
+        ],
+        [
+          "Thảo luận học tập cùng cộng đồng",
+          "#FFFFFF"
+        ]
+      ],
+      "stickers": [
+        {
+          "emoji": "📌",
+          "text": "LƯU VIDEO LẠI",
+          "triggerFrame": 15,
+          "rotate": -6,
+          "top": -24,
+          "left": 30
+        }
+      ]
+    },
+    {
+      "badge": "10 // HƯỚNG DẪN BIO TIKTOK",
+      "titleGold": "LINK TRONG BIO",
+      "titleWhite": "Lướt Xuống Xíu Là Thấy",
+      "centerEmoji": "👇",
+      "stickers": [
+        {
+          "emoji": "👇",
+          "text": "VÀO BIO TIKTOK",
+          "triggerFrame": 15,
+          "rotate": 8,
+          "top": -24,
+          "right": 30
+        }
+      ]
+    }
+  ]
+}

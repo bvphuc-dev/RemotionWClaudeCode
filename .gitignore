@@ -1,0 +1,18 @@
+node_modules
+dist
+build
+.DS_Store
+.env
+*.pyc
+__pycache__/
+.venv/
+temp_voice_segments/
+temp_hallmark_segments/
+
+# Ignore the output video from Git but not videos you import into src/.
+out
+whisper.cpp
+
+# Generated voice files
+public/current_voice.mp3
+

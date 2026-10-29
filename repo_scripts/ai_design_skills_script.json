@@ -1,0 +1,245 @@
+{
+  "tiktok_post": {
+    "title": "Dự án mã nguồn mở này liệu có khiến dân UI UX Designer mất việc?",
+    "caption": "Bộ AI Design Skills gây bão GitHub với hơn 10.000 stars. Biến Claude Code, Cursor thành UI/UX Designer tạo landing page cực đỉnh hoàn toàn miễn phí. Link nhóm tele tài liệu trong bio nhé!",
+    "hashtags": [
+      "#ai",
+      "#uidesign",
+      "#cursor",
+      "#claudecode",
+      "#github",
+      "#coding",
+      "#laptrinh",
+      "#learnontiktok"
+    ],
+    "tiktok_copy_line": "Dự án mã nguồn mở này liệu có khiến dân UI UX Designer mất việc? #ai #uidesign #cursor #claudecode #github #coding #laptrinh #learnontiktok"
+  },
+  "display_scripts": [
+    "Đừng tốn tiền thuê thiết kế khi GitHub có dự án này.",
+    "Tham gia nhóm chat tele của mình ở link trong bio tiktok nhé.",
+    "Lướt xuống xíu trong trang web, là thấy link nhóm tele nhé.",
+    "Bộ kỹ năng biến Cursor thành nhà thiết kế siêu đỉnh.",
+    "Dự án AI Design Skills cực hot trên GitHub.",
+    "Repo thu hút hơn mười nghìn ngôi sao từ cộng đồng lập trình.",
+    "Tự động tạo Landing Page đẹp mắt chuẩn tỉ lệ.",
+    "Tối ưu phông chữ, khoảng cách và chuyển động mượt mà không lỗi.",
+    "Mã nguồn mở hoàn toàn miễn phí, tích hợp thẳng vào dự án.",
+    "Cài đặt cực nhanh chỉ với thao tác sao chép vào thư mục."
+  ],
+  "voice_scripts": [
+    "Đừng tốn tiền thuê thiết kế khi Gít Húp có dự án này.",
+    "Tham gia nhóm chat tele của mình ở link trong bio tiktok nhé.",
+    "Lướt xuống xíu trong trang web, là thấy link nhóm tele nhé.",
+    "Bộ kỹ năng biến Cớ Sơ thành nhà thiết kế siêu đỉnh.",
+    "Dự án A I Đi Sai Kin cực hot trên Gít Húp.",
+    "Repo thu hút hơn mười nghìn ngôi sao từ cộng đồng lập trình.",
+    "Tự động tạo lèn đinh pếch đẹp mắt chuẩn tỉ lệ.",
+    "Tối ưu phông chữ, khoảng cách và chuyển động mượt mà không lỗi.",
+    "Mã nguồn mở hoàn toàn miễn phí, tích hợp thẳng vào dự án.",
+    "Cài đặt cực nhanh chỉ với thao tác sao chép vào thư mục."
+  ],
+  "scenes_meta": [
+    {
+      "badge": "01 // CẢNH BÁO CHI PHÍ",
+      "titleGold": "DỪNG THUÊ THIẾT KẾ!",
+      "titleWhite": "Đừng Tốn Tiền Triệu Thuê UI/UX",
+      "centerEmoji": "🛑",
+      "stickers": [
+        {
+          "emoji": "💸",
+          "text": "TỐN TIỀN TRIỆU",
+          "triggerFrame": 15,
+          "rotate": -6,
+          "top": -24,
+          "left": 30
+        },
+        {
+          "emoji": "⛔",
+          "text": "DỪNG LẠI NGAY",
+          "triggerFrame": 45,
+          "rotate": 8,
+          "bottom": -24,
+          "right": 30
+        }
+      ]
+    },
+    {
+      "badge": "02 // THAM GIA TELEGRAM",
+      "titleGold": "LƯU VIDEO NGAY",
+      "titleWhite": "Tham Gia Nhóm Chat Tele",
+      "bullets": [
+        [
+          "Link nhóm nằm trong BIO TikTok",
+          "#FFCC00"
+        ],
+        [
+          "Nhận prompt và skill AI xịn mỗi ngày",
+          "#FFFFFF"
+        ],
+        [
+          "Cộng đồng coder cùng trao đổi",
+          "#FFFFFF"
+        ]
+      ],
+      "stickers": [
+        {
+          "emoji": "📌",
+          "text": "LƯU VIDEO LẠI",
+          "triggerFrame": 15,
+          "rotate": -6,
+          "top": -24,
+          "left": 30
+        }
+      ]
+    },
+    {
+      "badge": "03 // HƯỚNG DẪN BIO TIKTOK",
+      "titleGold": "LINK TRONG BIO",
+      "titleWhite": "Lướt Xuống Xíu Là Thấy",
+      "centerEmoji": "👇",
+      "stickers": [
+        {
+          "emoji": "👇",
+          "text": "VÀO BIO TIKTOK",
+          "triggerFrame": 15,
+          "rotate": 8,
+          "top": -24,
+          "right": 30
+        }
+      ]
+    },
+    {
+      "badge": "04 // GIẢI PHÁP AI ĐỈNH CAO",
+      "titleGold": "BIẾN AI THÀNH DESIGNER",
+      "titleWhite": "Thiết Kế Web Chuẩn Chuyên Nghiệp",
+      "centerEmoji": "🎨",
+      "stickers": [
+        {
+          "emoji": "🤖",
+          "text": "AI DESIGNER",
+          "triggerFrame": 15,
+          "rotate": 6,
+          "top": -24,
+          "right": 30
+        },
+        {
+          "emoji": "⚡",
+          "text": "CURSOR & CLAUDE",
+          "triggerFrame": 45,
+          "rotate": -6,
+          "bottom": -24,
+          "left": 30
+        }
+      ]
+    },
+    {
+      "badge": "05 // DỰ ÁN GITHUB",
+      "titleGold": "AI DESIGN SKILLS",
+      "titleWhite": "Tác Giả: @elayadesign",
+      "image": "assets/ai_design_skills_github.png",
+      "stickers": [
+        {
+          "emoji": "🔥",
+          "text": "TRENDING #1",
+          "triggerFrame": 15,
+          "rotate": -5,
+          "top": -24,
+          "left": 30
+        }
+      ]
+    },
+    {
+      "badge": "06 // UY TÍN CỘNG ĐỒNG",
+      "titleGold": "⭐ 10,200+ STARS",
+      "titleWhite": "Cộng Đồng Coder Toàn Cầu Tin Dùng",
+      "centerEmoji": "🌟",
+      "stickers": [
+        {
+          "emoji": "🚀",
+          "text": "VIRAL GITHUB",
+          "triggerFrame": 20,
+          "rotate": 7,
+          "bottom": -24,
+          "right": 30
+        }
+      ]
+    },
+    {
+      "badge": "07 // GIAO DIỆN & WORKFLOW",
+      "titleGold": "LANDING PAGE DESIGN",
+      "titleWhite": "Tự Động Sinh Hệ Thống Visual Chuẩn",
+      "image": "assets/ai_design_skills_skill.png",
+      "stickers": [
+        {
+          "emoji": "📐",
+          "text": "CHUẨN TỈ LỆ",
+          "triggerFrame": 15,
+          "rotate": 6,
+          "top": -24,
+          "right": 30
+        }
+      ]
+    },
+    {
+      "badge": "08 // TÍNH NĂNG ĐỘT PHÁ",
+      "titleGold": "HỆ THỐNG DESIGN SYSTEM",
+      "titleWhite": "Đầy Đủ Font, Spacing & Motion",
+      "bullets": [
+        [
+          "Hệ thống typography và bảng màu chuẩn",
+          "#FFCC00"
+        ],
+        [
+          "Tự động căn chỉnh radius và spacing",
+          "#FFFFFF"
+        ],
+        [
+          "Tích hợp thẳng Cursor, Claude Code, Windsurf",
+          "#FFFFFF"
+        ]
+      ],
+      "stickers": [
+        {
+          "emoji": "💎",
+          "text": "SIÊU THẨM MỸ",
+          "triggerFrame": 20,
+          "rotate": -6,
+          "top": -24,
+          "left": 30
+        }
+      ]
+    },
+    {
+      "badge": "09 // 100% MIỄN PHÍ",
+      "titleGold": "0 ĐỒNG CHI PHÍ",
+      "titleWhite": "Mã Nguồn Mở Tự Do Sử Dụng",
+      "centerEmoji": "💰",
+      "stickers": [
+        {
+          "emoji": "🆓",
+          "text": "FREE VĨNH VIỄN",
+          "triggerFrame": 20,
+          "rotate": -6,
+          "bottom": -24,
+          "left": 30
+        }
+      ]
+    },
+    {
+      "badge": "10 // CÀI ĐẶT 1 DÒNG LỆNH",
+      "titleGold": "CÀI ĐẶT 1 DÒNG",
+      "titleWhite": "Chạy Ngay Trong Terminal",
+      "command": "git clone https://github.com/elayadesign/ai-design-skills.git",
+      "stickers": [
+        {
+          "emoji": "💻",
+          "text": "1 BƯỚC XONG NGAY",
+          "triggerFrame": 15,
+          "rotate": -6,
+          "top": -24,
+          "left": 30
+        }
+      ]
+    }
+  ]
+}

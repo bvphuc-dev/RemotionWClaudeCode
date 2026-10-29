@@ -1,0 +1,87 @@
+{
+  "brief": {
+    "what_it_is": "công cụ giúp trợ lý AI ghi nhớ dài hạn toàn bộ công việc và quyết định của bạn",
+    "input": "các phiên làm việc, câu lệnh và thao tác hàng ngày",
+    "output": "sổ ghi nhớ tóm tắt được nạp tự động vào các lần làm việc sau",
+    "problem": "trợ lý AI cứ tắt cửa sổ chat là quên sạch mọi thứ, phải giải thích lại từ đầu rất tốn thời gian",
+    "concrete_example": "tắt máy mở lại sau một tuần, AI vẫn nhớ rõ mười lỗi vừa sửa và tiếp tục công việc ngay",
+    "evidence": "Persistent Context Across Sessions for Every Agent"
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "text": "Có phải trợ lý AI cứ tắt đi là quên sạch mọi việc?",
+      "on_screen_keyword": "AI HAY QUÊN?",
+      "visual_hint": "Trợ lý AI bị mất trí nhớ sau mỗi phiên"
+    },
+    {
+      "id": 2,
+      "text": "Dự án Claude Mem từ tác giả TheDotMack.",
+      "on_screen_keyword": "CLAUDE MEM",
+      "visual_hint": "Logo Claude Mem của TheDotMack"
+    },
+    {
+      "id": 3,
+      "text": "Dự án đạt hơn một trăm nghìn ngôi sao GitHub.",
+      "on_screen_keyword": "104K+ STARS",
+      "visual_hint": "Số sao khổng lồ trên GitHub"
+    },
+    {
+      "id": 4,
+      "text": "Claude Mem là công cụ giúp trợ lý AI nhớ mọi việc bạn làm.",
+      "on_screen_keyword": "GẮN BỘ NHỚ AI",
+      "visual_hint": "Sổ nhớ vĩnh viễn cho trợ lý AI"
+    },
+    {
+      "id": 5,
+      "text": "Bạn ném vào các phiên làm việc, máy tự nhả ra sổ nhớ chi tiết.",
+      "on_screen_keyword": "LƯU TRỮ TỰ ĐỘNG",
+      "visual_hint": "Tự động ghi chép tóm tắt tiến độ"
+    },
+    {
+      "id": 6,
+      "text": "Tắt máy mở lại sau một tuần, AI vẫn nhớ rõ mười lỗi vừa sửa.",
+      "on_screen_keyword": "NHỚ RÕ 10 LỖI",
+      "visual_hint": "Mở lại máy sau 1 tuần vẫn nhớ chi tiết"
+    },
+    {
+      "id": 7,
+      "text": "Dành cho người dùng AI, sợ cảnh ngày nào cũng phải nhắc lại.",
+      "on_screen_keyword": "KHÔNG CẦN NHẮC",
+      "visual_hint": "Không phải gõ lại bối cảnh từ đầu"
+    },
+    {
+      "id": 8,
+      "text": "Hoàn toàn miễn phí, không tốn một đồng.",
+      "on_screen_keyword": "0 ĐỒNG CHI PHÍ",
+      "visual_hint": "Mã nguồn mở miễn phí 100%"
+    },
+    {
+      "id": 9,
+      "text": "Cài đặt một dòng lệnh cực nhanh bằng npx.",
+      "on_screen_keyword": "NPX CLAUDE-MEM",
+      "visual_hint": "npx claude-mem install"
+    },
+    {
+      "id": 10,
+      "text": "Xem hướng dẫn chi tiết trong nhóm nhé. Tham gia nhóm chat tele của mình ở link trong bio tiktok nhé.",
+      "on_screen_keyword": "VÀO BIO TIKTOK",
+      "visual_hint": "Link nhóm tele trong bio"
+    }
+  ],
+  "warnings": [],
+  "tiktok_post": {
+    "title": "Công cụ mã nguồn mở này liệu có giải quyết dứt điểm chứng mất trí nhớ của AI?",
+    "caption": "Dự án Claude Mem gây sốt với hơn 100.000 stars GitHub. Giúp trợ lý AI nhớ vĩnh viễn mọi việc bạn đã làm hoàn toàn miễn phí. Link nhóm tele tài liệu trong bio nhé!",
+    "hashtags": [
+      "#ai",
+      "#claudemem",
+      "#claudecode",
+      "#github",
+      "#coding",
+      "#laptrinh",
+      "#learnontiktok"
+    ],
+    "tiktok_copy_line": "Công cụ mã nguồn mở này liệu có giải quyết dứt điểm chứng mất trí nhớ của AI? #ai #claudemem #claudecode #github #coding #laptrinh #learnontiktok"
+  }
+}
