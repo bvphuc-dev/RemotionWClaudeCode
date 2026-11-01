@@ -1,0 +1,138 @@
+{
+  "brief": {
+    "what_it_is": "REA là chiếc máy chụp X-quang phần mềm giúp trợ lý AI nhìn xuyên thấu vào ruột mọi ứng dụng mà không cần mã nguồn.",
+    "input": "bất kỳ tệp ứng dụng đóng kín nào (file chạy phần mềm, trang web, ứng dụng điện thoại)",
+    "output": "AI tự mổ xẻ từng hàm, vẽ ra sơ đồ logic và viết lại tính năng y hệt cho bạn",
+    "problem": "thấy app người khác có tính năng quá hay nhưng bị mã hóa đóng kín, mò tay mất cả tuần",
+    "concrete_example": "bảo AI mổ xẻ game khủng long để tìm luật tăng tốc độ và viết lại game mới có thanh trượt điều khiển trong vài phút",
+    "evidence": "Reverse engineer anything with agents, from app behavior down to native binaries"
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "badge": "01 // SIÊU NĂNG LỰC",
+      "titleGold": "MỔ XẺ MỌI ỨNG DỤNG",
+      "titleWhite": "Khám Phá Bí Mật Mã Nguồn",
+      "text": "Bạn thấy một ứng dụng có tính năng cực đỉnh nhưng không có mã nguồn? Repo REA này sẽ giúp AI mổ xẻ mọi phần mềm.",
+      "on_screen_keyword": "MỔ XẺ ỨNG DỤNG",
+      "visual_hint": "Bí mật bên trong mọi phần mềm",
+      "image": "assets/morluto_rea_github_repo.png",
+      "stickers": [
+        {"emoji": "🔥", "text": "413K STARS", "triggerFrame": 15, "rotate": -6, "top": -24, "left": 30},
+        {"emoji": "⚡", "text": "BƯỚC NGOẶT AI", "triggerFrame": 45, "rotate": 8, "bottom": -24, "right": 30}
+      ]
+    },
+    {
+      "id": 2,
+      "badge": "02 // NỖI ĐAU NGƯỜI MỚI",
+      "titleGold": "BẤT LỰC VỚI FILE ĐÓNG",
+      "titleWhite": "Không Có Mã Nguồn Thì Chịu?",
+      "text": "Người mới học code muốn làm tính năng giống đối thủ thường bất lực vì ứng dụng đã đóng gói mã hóa, mò tay thì mù mịt.",
+      "on_screen_keyword": "BẤT LỰC VÌ MÃ HÓA",
+      "visual_hint": "Tệp ứng dụng bị khóa chặt",
+      "centerEmoji": "🔒",
+      "stickers": [
+        {"emoji": "😵", "text": "MÒ KIM ĐÁY BỂ", "triggerFrame": 15, "rotate": -7, "top": -24, "right": 30},
+        {"emoji": "❌", "text": "KHÔNG CÓ CODE", "triggerFrame": 45, "rotate": 6, "bottom": -24, "left": 30}
+      ]
+    },
+    {
+      "id": 3,
+      "badge": "03 // PHÉP MÀU X-QUANG",
+      "titleGold": "MÁY CHỤP X-QUANG",
+      "titleWhite": "Soi Thông Suốt Ruột Phần Mềm",
+      "text": "REA chính là chiếc máy chụp X-quang phần mềm, trao cho trợ lý AI đôi mắt nhìn xuyên thấu vào tận từng tế bào nhị phân.",
+      "on_screen_keyword": "CHỤP X-QUANG CODE",
+      "visual_hint": "Soi thấu tận ruột phần mềm",
+      "image": "assets/morluto_rea_asset_1.png",
+      "stickers": [
+        {"emoji": "🩻", "text": "SOI XUYÊN THẤU", "triggerFrame": 15, "rotate": 6, "top": -24, "left": 30},
+        {"emoji": "🧠", "text": "AI TRÍ TUỆ CAO", "triggerFrame": 45, "rotate": -6, "bottom": -24, "right": 30}
+      ]
+    },
+    {
+      "id": 4,
+      "badge": "04 // VÀO APP, RA CODE",
+      "titleGold": "VÀO TỆP ĐÓNG, RA LOGIC",
+      "titleWhite": "Tự Động Mổ Xẻ 100% Cục Bộ",
+      "text": "Bạn chỉ cần ném tệp phần mềm đóng kín vào, trợ lý AI tự mổ xẻ các nhánh chạy và đưa ra bằng chứng hoạt động xác thực.",
+      "on_screen_keyword": "VÀO FILE, RA LOGIC",
+      "visual_hint": "Bằng chứng hoạt động rõ ràng",
+      "centerEmoji": "⚙️",
+      "stickers": [
+        {"emoji": "📥", "text": "NÉM FILE VÀO", "triggerFrame": 15, "rotate": -6, "top": -24, "right": 30},
+        {"emoji": "📤", "text": "NHẬN CODE RA", "triggerFrame": 45, "rotate": 7, "bottom": -24, "left": 30}
+      ]
+    },
+    {
+      "id": 5,
+      "badge": "05 // VÍ DỤ THỰC TẾ",
+      "titleGold": "LÀM LẠI TÍNH NĂNG NHANH",
+      "titleWhite": "Mổ Xẻ Game Trong Vài Phút",
+      "text": "Ví dụ muốn biết game khủng long tăng tốc thế nào, chỉ cần hỏi một câu, AI mổ xẻ mã máy và dựng lại game y hệt trong vài phút.",
+      "on_screen_keyword": "MỔ XẺ GAME NHANH",
+      "visual_hint": "Tái tạo tính năng trong vài phút",
+      "image": "assets/morluto_rea_website_workflow.png",
+      "stickers": [
+        {"emoji": "🦖", "text": "GAME KHỦNG LONG", "triggerFrame": 15, "rotate": -5, "top": -24, "left": 30},
+        {"emoji": "⚡", "text": "XONG TRONG VÀI PHÚT", "triggerFrame": 45, "rotate": 6, "bottom": -24, "right": 30}
+      ]
+    },
+    {
+      "id": 6,
+      "badge": "06 // ĐÈ BẸP CÁCH CŨ",
+      "titleGold": "VƯỢT TRỘI CÁCH CŨ",
+      "titleWhite": "Không Cần Chuyên Gia Giá Nghìn Đô",
+      "text": "Trước đây dịch ngược ứng dụng cần chuyên gia mất cả tuần, nay trợ lý AI của bạn tự làm ngay trên máy, an toàn tuyệt đối.",
+      "on_screen_keyword": "TIẾT KIỆM HÀNG TUẦN",
+      "visual_hint": "Chạy cục bộ, bảo mật 100%",
+      "bullets": [
+        ["Cách cũ: Thuê chuyên gia mất cả tuần, tốn tiền triệu", "#FFFFFF"],
+        ["Cách mới: Trợ lý AI tự mổ xẻ chỉ trong vài phút", "#FFCC00"],
+        ["An toàn: Chạy 100% trên máy tính của bạn", "#FFFFFF"]
+      ],
+      "stickers": [
+        {"emoji": "⏱️", "text": "TIẾT KIỆM 99% GIỜ", "triggerFrame": 15, "rotate": 6, "top": -24, "right": 30},
+        {"emoji": "🛡️", "text": "AN TOÀN CỤC BỘ", "triggerFrame": 45, "rotate": -6, "bottom": -24, "left": 30}
+      ]
+    },
+    {
+      "id": 7,
+      "badge": "07 // CÀI ĐẶT 0 ĐỒNG",
+      "titleGold": "MIỄN PHÍ TRỌN ĐỜI",
+      "titleWhite": "Cài Đặt Cực Nhanh 1 Dòng",
+      "text": "Dự án mã nguồn mở hoàn toàn miễn phí không tốn một đồng, cài đặt chỉ bằng đúng một dòng lệnh npx đơn giản.",
+      "on_screen_keyword": "0 ĐỒNG 1 DÒNG LỆNH",
+      "visual_hint": "Copy lệnh npx chạy ngay",
+      "command": "npx rea-agents setup",
+      "stickers": [
+        {"emoji": "💰", "text": "0 ĐỒNG MIỄN PHÍ", "triggerFrame": 15, "rotate": -6, "top": -24, "left": 30},
+        {"emoji": "💻", "text": "1 DÒNG LỆNH NPX", "triggerFrame": 45, "rotate": 7, "bottom": -24, "right": 30}
+      ]
+    },
+    {
+      "id": 8,
+      "badge": "08 // TRANH LUẬN & BIO",
+      "titleGold": "BẠN DÁM THỬ KHÔNG?",
+      "titleWhite": "Nhóm Chat Tele Ở Link Bio",
+      "text": "Bạn có dám để AI mổ xẻ phần mềm đối thủ không? Tham gia nhóm chat tele của mình ở link trong bio tiktok nhé.",
+      "on_screen_keyword": "LINK TRONG BIO",
+      "visual_hint": "Bình luận và lấy link bio",
+      "bullets": [
+        ["Link repo và hướng dẫn nằm trong BIO TikTok", "#FFCC00"],
+        ["Chia sẻ kỹ thuật AI và mã nguồn mở đỉnh cao", "#FFFFFF"],
+        ["Bình luận ngay ý kiến của bạn bên dưới", "#FFFFFF"]
+      ],
+      "stickers": [
+        {"emoji": "💬", "text": "BÌNH LUẬN NGAY", "triggerFrame": 15, "rotate": -6, "top": -24, "right": 30},
+        {"emoji": "🚀", "text": "TELE TRONG BIO", "triggerFrame": 45, "rotate": 7, "bottom": -24, "left": 30}
+      ]
+    }
+  ],
+  "tiktok_post": {
+    "title": "Công cụ mã nguồn mở này giúp AI mổ xẻ mọi phần mềm dù không có code?",
+    "caption": "Dự án REA cực đỉnh trên GitHub với hơn 413,000 sao. Trợ lý AI có thể dịch ngược và hiểu thấu mọi ứng dụng. Miễn phí 100%. Link tele cộng đồng trong bio nhé!",
+    "hashtags": ["#ai", "#rea", "#reverseengineering", "#coding", "#github", "#laptrinh", "#learnontiktok"],
+    "tiktok_copy_line": "Công cụ mã nguồn mở này giúp AI mổ xẻ mọi phần mềm dù không có code? #ai #rea #reverseengineering #coding #github #laptrinh #learnontiktok"
+  }
+}

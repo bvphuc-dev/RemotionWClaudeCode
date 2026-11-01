@@ -32,6 +32,10 @@ PHONETIC_PAIRS = [
     (r"\bweb\b", "oép"),
     (r"\bTheDotMack\b", "The Dot Mack"),
     (r"\bnpx\b", "en pi ích"),
+    (r"\bVorssaint\b", "Vo sanh"),
+    (r"\bOrkas\b", "O ca"),
+    (r"\bMacBook\b", "Mác Búc"),
+    (r"\bMac\b", "Mác"),
 ]
 
 REVERSE_PHONETIC_PAIRS = [
@@ -48,6 +52,9 @@ REVERSE_PHONETIC_PAIRS = [
     (r"\bRê pô\b", "Repo"),
     (r"\brê pô\b", "Repo"),
     (r"\bU I U Ích\b", "UI/UX"),
+    (r"\bVo sanh\b", "Vorssaint"),
+    (r"\bO ca\b", "Orkas"),
+    (r"\bMác Búc\b", "MacBook"),
 ]
 
 DEFAULT_CTA_FIXED = "Tham gia nhóm chat tele của mình ở link trong bio tiktok nhé."
@@ -301,7 +308,7 @@ def parse_or_create_scenes(custom_data: dict, repo_meta: dict) -> tuple[list[str
     }
     """
     # Fallback to legacy format if "scenes" is not a list of scene objects
-    if "scenes" not in custom_data or not isinstance(custom_data["scenes"], list) or len(custom_data["scenes"]) < 10:
+    if "scenes" not in custom_data or not isinstance(custom_data["scenes"], list) or len(custom_data["scenes"]) < 5:
         if "voice_scripts" in custom_data or "display_scripts" in custom_data or "scripts" in custom_data:
             voice_scripts = custom_data.get("voice_scripts") or custom_data.get("tts_scripts")
             display_scripts = custom_data.get("display_scripts") or custom_data.get("subtitles") or custom_data.get("scripts", [])
@@ -322,7 +329,7 @@ def parse_or_create_scenes(custom_data: dict, repo_meta: dict) -> tuple[list[str
     img_repo = _pick_repo_screenshot(images)
     img_wf = _pick_workflow_screenshot(images) or img_repo
 
-    raw_scenes = sorted(custom_data["scenes"], key=lambda s: s.get("id", 0))[:10]
+    raw_scenes = sorted(custom_data["scenes"], key=lambda s: s.get("id", 0))
 
     badges_default = [
         "01 // CÂU HỎI LỚN",
@@ -347,21 +354,20 @@ def parse_or_create_scenes(custom_data: dict, repo_meta: dict) -> tuple[list[str
         hint = sc.get("visual_hint", "").strip()
 
         # Handle auto-filled scenes
-        if sid == 3: # S3: Stars + screenshot (Python auto-fills if empty)
+        if sid == 3 and len(raw_scenes) == 10: # S3: Stars + screenshot (Python auto-fills if empty in 10-scene)
             if not raw_text:
                 raw_text = f"Dự án đạt hơn {stars_str} ngôi sao trên GitHub."
             if not kw:
                 kw = f"{stars_str} Stars"
-        elif sid == 9: # S9: Install command (Python auto-fills if empty)
-            if not raw_text:
-                raw_text = "Cài đặt nhanh gọn chỉ với một dòng lệnh."
+        elif sid == len(raw_scenes) - 1 and not raw_text and sc.get("command"):
+            raw_text = "Cài đặt nhanh gọn chỉ với một dòng lệnh."
             if not kw:
                 kw = "1 DÒNG LỆNH"
-        elif sid == 10: # S10: Bridge + cta_fixed
+        elif sid == len(raw_scenes): # Last scene: Bridge + cta_fixed if requested
             bridge = raw_text
             if not bridge:
                 bridge = "Chi tiết nằm ở link bên dưới nhé."
-            if "tele" not in bridge.lower():
+            if "tele" not in bridge.lower() and "bio" not in bridge.lower():
                 raw_text = f"{bridge} {DEFAULT_CTA_FIXED}".strip()
             if not kw:
                 kw = "LINK Ở BIO"
@@ -380,89 +386,98 @@ def parse_or_create_scenes(custom_data: dict, repo_meta: dict) -> tuple[list[str
                 print(f"   ⚠️ [KỊCH BẢN - S{sid}] Chứa thuật ngữ dev: {', '.join(found_jargon)}. Người không biết code sẽ không hiểu!")
 
         # Build scene meta
-        badge = badges_default[idx]
+        badge = sc.get("badge") or (badges_default[idx] if idx < len(badges_default) else f"{sid:02d} // TÍNH NĂNG")
         sm = {
             "badge": badge,
-            "titleGold": kw.upper() if kw else f"SCENE {sid:02d}",
-            "titleWhite": hint if (hint and len(hint) <= 45) else clean_sub[:45],
-            "stickers": []
+            "titleGold": sc.get("titleGold") or (kw.upper() if kw else f"SCENE {sid:02d}"),
+            "titleWhite": sc.get("titleWhite") or (hint if (hint and len(hint) <= 45) else clean_sub[:45]),
+            "stickers": sc.get("stickers", [])
         }
+        if "image" in sc:
+            sm["image"] = sc["image"]
+        if "command" in sc:
+            sm["command"] = sc["command"]
+        if "bullets" in sc:
+            sm["bullets"] = sc["bullets"]
+        if "centerEmoji" in sc:
+            sm["centerEmoji"] = sc["centerEmoji"]
 
-        # Context-specific visuals based on scene role
-        if sid == 1:
-            sm["centerEmoji"] = "🔥"
-            sm["stickers"] = [
-                {"emoji": "🔥", "text": kw[:16] if kw else "HOT TREND", "triggerFrame": 15, "rotate": -6, "top": -24, "left": 30},
-                {"emoji": "⚡", "text": "GÂY BẤT NGỜ", "triggerFrame": 45, "rotate": 8, "bottom": -24, "right": 30}
-            ]
-        elif sid == 2:
-            sm["titleGold"] = name.upper()
-            sm["titleWhite"] = f"Tác Giả: @{owner}"
-            sm["centerEmoji"] = "🐙"
-            sm["stickers"] = [
-                {"emoji": "🐙", "text": "GITHUB REPO", "triggerFrame": 15, "rotate": -5, "top": -24, "left": 30},
-                {"emoji": "🚀", "text": kw[:16] if kw else "MÃ NGUỒN MỞ", "triggerFrame": 45, "rotate": 6, "bottom": -24, "right": 30}
-            ]
-        elif sid == 3:
-            sm["titleGold"] = f"⭐ {stars_str} STARS"
-            sm["titleWhite"] = "Cộng Đồng Đón Nhận Nồng Nhiệt"
-            sm["image"] = img_repo
-            sm["stickers"] = [
-                {"emoji": "⭐", "text": f"{stars_str} SAO", "triggerFrame": 15, "rotate": -7, "top": -24, "left": 30},
-                {"emoji": "🔥", "text": "VIRAL GITHUB", "triggerFrame": 45, "rotate": 6, "bottom": -24, "right": 30}
-            ]
-        elif sid == 4:
-            sm["centerEmoji"] = "💡"
-            sm["stickers"] = [
-                {"emoji": "💡", "text": "ĐỊNH NGHĨA", "triggerFrame": 15, "rotate": -6, "top": -24, "left": 30},
-                {"emoji": "⚡", "text": kw[:16] if kw else "CÔNG DỤNG", "triggerFrame": 45, "rotate": 7, "bottom": -24, "right": 30}
-            ]
-        elif sid == 5:
-            sm["centerEmoji"] = "🔄"
-            sm["stickers"] = [
-                {"emoji": "📥", "text": "ĐƯA VÀO X", "triggerFrame": 15, "rotate": 6, "top": -24, "right": 30},
-                {"emoji": "📤", "text": kw[:16] if kw else "TRẢ RA Y", "triggerFrame": 45, "rotate": -6, "bottom": -24, "left": 30}
-            ]
-        elif sid == 6:
-            sm["image"] = img_wf
-            sm["stickers"] = [
-                {"emoji": "📊", "text": kw[:16] if kw else "VÍ DỤ THẬT", "triggerFrame": 15, "rotate": -6, "top": -24, "left": 30},
-                {"emoji": "✨", "text": "KẾT QUẢ", "triggerFrame": 45, "rotate": 6, "bottom": -24, "right": 30}
-            ]
-        elif sid == 7:
-            sm["centerEmoji"] = "🎯"
-            sm["stickers"] = [
-                {"emoji": "🎯", "text": kw[:16] if kw else "DÀNH CHO BẠN", "triggerFrame": 15, "rotate": 6, "top": -24, "right": 30},
-                {"emoji": "⚡", "text": "ĐÚNG NHU CẦU", "triggerFrame": 45, "rotate": -6, "bottom": -24, "left": 30}
-            ]
-        elif sid == 8:
-            sm["titleGold"] = "0 ĐỒNG CHI PHÍ"
-            sm["titleWhite"] = "Hoàn Toàn Miễn Phí"
-            sm["centerEmoji"] = "💰"
-            sm["stickers"] = [
-                {"emoji": "💵", "text": kw[:16] if kw else "0 ĐỒNG", "triggerFrame": 15, "rotate": 7, "top": -24, "right": 30},
-                {"emoji": "🆓", "text": "FREE TRỌN ĐỜI", "triggerFrame": 45, "rotate": -6, "bottom": -24, "left": 30}
-            ]
-        elif sid == 9:
-            sm["titleGold"] = "CÀI ĐẶT 1 DÒNG"
-            sm["titleWhite"] = "Copy & Chạy Ngay"
-            sm["command"] = cmd
-            sm["stickers"] = [
-                {"emoji": "💻", "text": "1 DÒNG LỆNH", "triggerFrame": 15, "rotate": -6, "top": -24, "left": 30},
-                {"emoji": "⚡", "text": "CHẠY NGAY", "triggerFrame": 45, "rotate": 7, "bottom": -24, "right": 30}
-            ]
-        elif sid == 10:
-            sm["titleGold"] = "LINK TRONG BIO"
-            sm["titleWhite"] = "Tham Gia Nhóm Chat Tele"
-            sm["bullets"] = [
-                ["Link nhóm nằm trong BIO TikTok", "#FFCC00"],
-                ["Cập nhật repo AI đỉnh mỗi ngày", "#FFFFFF"],
-                ["Thảo luận cùng cộng đồng coder", "#FFFFFF"]
-            ]
-            sm["stickers"] = [
-                {"emoji": "📌", "text": "LƯU VIDEO LẠI", "triggerFrame": 15, "rotate": -6, "top": -24, "left": 30},
-                {"emoji": "💬", "text": "NHÓM CHAT TELE", "triggerFrame": 45, "rotate": 7, "bottom": -24, "right": 30}
-            ]
+        # Context-specific visuals based on scene role if not already provided
+        if not sm["stickers"] and not sm.get("image") and not sm.get("command") and not sm.get("bullets"):
+            if sid == 1:
+                sm["centerEmoji"] = "🔥"
+                sm["stickers"] = [
+                    {"emoji": "🔥", "text": kw[:16] if kw else "HOT TREND", "triggerFrame": 15, "rotate": -6, "top": -24, "left": 30},
+                    {"emoji": "⚡", "text": "GÂY BẤT NGỜ", "triggerFrame": 45, "rotate": 8, "bottom": -24, "right": 30}
+                ]
+            elif sid == 2:
+                sm["titleGold"] = sc.get("titleGold") or name.upper()
+                sm["titleWhite"] = sc.get("titleWhite") or f"Tác Giả: @{owner}"
+                sm["centerEmoji"] = "🐙"
+                sm["stickers"] = [
+                    {"emoji": "🐙", "text": "GITHUB REPO", "triggerFrame": 15, "rotate": -5, "top": -24, "left": 30},
+                    {"emoji": "🚀", "text": kw[:16] if kw else "MÃ NGUỒN MỞ", "triggerFrame": 45, "rotate": 6, "bottom": -24, "right": 30}
+                ]
+            elif sid == 3:
+                sm["titleGold"] = sc.get("titleGold") or f"⭐ {stars_str} STARS"
+                sm["titleWhite"] = sc.get("titleWhite") or "Cộng Đồng Đón Nhận Nồng Nhiệt"
+                sm["image"] = img_repo
+                sm["stickers"] = [
+                    {"emoji": "⭐", "text": f"{stars_str} SAO", "triggerFrame": 15, "rotate": -7, "top": -24, "left": 30},
+                    {"emoji": "🔥", "text": "VIRAL GITHUB", "triggerFrame": 45, "rotate": 6, "bottom": -24, "right": 30}
+                ]
+            elif sid == 4:
+                sm["centerEmoji"] = "💡"
+                sm["stickers"] = [
+                    {"emoji": "💡", "text": "ĐỊNH NGHĨA", "triggerFrame": 15, "rotate": -6, "top": -24, "left": 30},
+                    {"emoji": "⚡", "text": kw[:16] if kw else "CÔNG DỤNG", "triggerFrame": 45, "rotate": 7, "bottom": -24, "right": 30}
+                ]
+            elif sid == 5:
+                sm["centerEmoji"] = "🔄"
+                sm["stickers"] = [
+                    {"emoji": "📥", "text": "ĐƯA VÀO X", "triggerFrame": 15, "rotate": 6, "top": -24, "right": 30},
+                    {"emoji": "📤", "text": kw[:16] if kw else "TRẢ RA Y", "triggerFrame": 45, "rotate": -6, "bottom": -24, "left": 30}
+                ]
+            elif sid == 6:
+                sm["image"] = img_wf
+                sm["stickers"] = [
+                    {"emoji": "📊", "text": kw[:16] if kw else "VÍ DỤ THẬT", "triggerFrame": 15, "rotate": -6, "top": -24, "top": -24, "left": 30},
+                    {"emoji": "✨", "text": "KẾT QUẢ", "triggerFrame": 45, "rotate": 6, "bottom": -24, "right": 30}
+                ]
+            elif sid == 7:
+                sm["centerEmoji"] = "🎯"
+                sm["stickers"] = [
+                    {"emoji": "🎯", "text": kw[:16] if kw else "DÀNH CHO BẠN", "triggerFrame": 15, "rotate": 6, "top": -24, "right": 30},
+                    {"emoji": "⚡", "text": "ĐÚNG NHU CẦU", "triggerFrame": 45, "rotate": -6, "bottom": -24, "left": 30}
+                ]
+            elif sid == 8 and len(raw_scenes) == 10:
+                sm["titleGold"] = "0 ĐỒNG CHI PHÍ"
+                sm["titleWhite"] = "Hoàn Toàn Miễn Phí"
+                sm["centerEmoji"] = "💰"
+                sm["stickers"] = [
+                    {"emoji": "💵", "text": kw[:16] if kw else "0 ĐỒNG", "triggerFrame": 15, "rotate": 7, "top": -24, "right": 30},
+                    {"emoji": "🆓", "text": "FREE TRỌN ĐỜI", "triggerFrame": 45, "rotate": -6, "bottom": -24, "left": 30}
+                ]
+            elif sid == 9 and len(raw_scenes) == 10:
+                sm["titleGold"] = "CÀI ĐẶT 1 DÒNG"
+                sm["titleWhite"] = "Copy & Chạy Ngay"
+                sm["command"] = cmd
+                sm["stickers"] = [
+                    {"emoji": "💻", "text": "1 DÒNG LỆNH", "triggerFrame": 15, "rotate": -6, "top": -24, "left": 30},
+                    {"emoji": "⚡", "text": "CHẠY NGAY", "triggerFrame": 45, "rotate": 7, "bottom": -24, "right": 30}
+                ]
+            elif sid == 10 and len(raw_scenes) == 10:
+                sm["titleGold"] = "LINK TRONG BIO"
+                sm["titleWhite"] = "Tham Gia Nhóm Chat Tele"
+                sm["bullets"] = [
+                    ["Link nhóm nằm trong BIO TikTok", "#FFCC00"],
+                    ["Cập nhật repo AI đỉnh mỗi ngày", "#FFFFFF"],
+                    ["Thảo luận cùng cộng đồng coder", "#FFFFFF"]
+                ]
+                sm["stickers"] = [
+                    {"emoji": "📌", "text": "LƯU VIDEO LẠI", "triggerFrame": 15, "rotate": -6, "top": -24, "left": 30},
+                    {"emoji": "💬", "text": "NHÓM CHAT TELE", "triggerFrame": 45, "rotate": 7, "bottom": -24, "right": 30}
+                ]
 
         scenes_meta.append(sm)
 

@@ -1,0 +1,138 @@
+{
+  "brief": {
+    "what_it_is": "Hộp đồ nghề vạn năng cho Mac giúp người dùng gom hơn 12 ứng dụng trả phí vào 1 biểu tượng duy nhất",
+    "input": "chọn các tính năng cần dùng trên thanh công cụ (chỉnh âm lượng, chia cửa sổ, xem nhiệt độ, dọn rác)",
+    "output": "máy Mac chạy nhẹ nhàng, quản lý toàn bộ hệ thống bằng phím tắt và biểu tượng góc màn hình",
+    "problem": "người dùng Mac phải trả phí thuê bao hàng tháng cho từng app riêng lẻ tốn tiền triệu",
+    "concrete_example": "chỉnh âm lượng từng ứng dụng vượt 100% hoặc chia đôi cửa sổ chỉ trong 1 giây",
+    "evidence": "One menu bar icon doing the job of a dozen paid Mac apps. Install only what you use."
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "badge": "01 // SIÊU NĂNG LỰC",
+      "titleGold": "SIÊU NĂNG LỰC GÂY SỐC",
+      "titleWhite": "Khám Phá Bí Mật Repo",
+      "text": "Bạn đang dùng máy Mac và tốn đống tiền mua ứng dụng mỗi tháng? Repo Vorssaint hơn ba mươi hai nghìn sao này sẽ thay đổi tất cả.",
+      "on_screen_keyword": "TÚI THẦN KỲ CHO MAC",
+      "visual_hint": "Bí mật bên trong mọi ứng dụng Mac",
+      "image": "assets/vorssaint_vorssaint-utils_github_repo.png",
+      "stickers": [
+        {"emoji": "🔥", "text": "32K STARS", "triggerFrame": 15, "rotate": -6, "top": -24, "left": 30},
+        {"emoji": "⚡", "text": "TOP 1 TRENDING", "triggerFrame": 45, "rotate": 8, "bottom": -24, "right": 30}
+      ]
+    },
+    {
+      "id": 2,
+      "badge": "02 // NỖI ĐAU NGƯỜI DÙNG",
+      "titleGold": "BẤT LỰC VỚI CÁCH CŨ",
+      "titleWhite": "Tốn Tiền Thuê Bao Hàng Tháng",
+      "text": "Người dùng MacBook thường phải bỏ tiền triệu mua app chỉnh âm thanh, chia cửa sổ. Việc này vừa tốn kém lại làm máy chạy chậm chạp.",
+      "on_screen_keyword": "TỐN TIỀN VÔ LÝ",
+      "visual_hint": "Mua nhiều app đắt đỏ và nặng máy",
+      "centerEmoji": "💸",
+      "stickers": [
+        {"emoji": "😵", "text": "TỐN TIỀN TRIỆU", "triggerFrame": 15, "rotate": -7, "top": -24, "right": 30},
+        {"emoji": "❌", "text": "MÁY NẶNG NỀ", "triggerFrame": 45, "rotate": 6, "bottom": -24, "left": 30}
+      ]
+    },
+    {
+      "id": 3,
+      "badge": "03 // PHÉP MÀU ĐỜI THỰC",
+      "titleGold": "HỘP ĐỒ NGHỀ VẠN NĂNG",
+      "titleWhite": "Gói Gọn Hơn Mười Ứng Dụng",
+      "text": "Vorssaint chính là chiếc túi thần kỳ cho Mac. Công cụ gom trọn chức năng của hơn mười hai ứng dụng trả phí vào đúng một biểu tượng nhỏ.",
+      "on_screen_keyword": "GOM 12 ỨNG DỤNG",
+      "visual_hint": "Tất cả công cụ trong 1 biểu tượng",
+      "image": "assets/vorssaint_vorssaint-utils_asset_1.png",
+      "stickers": [
+        {"emoji": "🧰", "text": "HỘP VẠN NĂNG", "triggerFrame": 15, "rotate": 6, "top": -24, "left": 30},
+        {"emoji": "🍎", "text": "CHUẨN MAC OS", "triggerFrame": 45, "rotate": -6, "bottom": -24, "right": 30}
+      ]
+    },
+    {
+      "id": 4,
+      "badge": "04 // VÀO X, RA Y",
+      "titleGold": "BẬT GÌ DÙNG ĐÓ",
+      "titleWhite": "Không Tài Khoản Không Theo Dõi",
+      "text": "Bạn chỉ cần chọn tính năng muốn dùng, thanh công cụ tự hiện ra chức năng đó ngay. Không cài thừa và không bao giờ thu thập thông tin người dùng.",
+      "on_screen_keyword": "BẬT GÌ DÙNG ĐÓ",
+      "visual_hint": "Giao diện bật tắt sạch sẽ",
+      "centerEmoji": "🎛️",
+      "stickers": [
+        {"emoji": "📥", "text": "CHỌN TÍNH NĂNG", "triggerFrame": 15, "rotate": -6, "top": -24, "right": 30},
+        {"emoji": "🛡️", "text": "KHÔNG THEO DÕI", "triggerFrame": 45, "rotate": 7, "bottom": -24, "left": 30}
+      ]
+    },
+    {
+      "id": 5,
+      "badge": "05 // VÍ DỤ THỰC TẾ",
+      "titleGold": "KẾT QUẢ ĐO ĐƯỢC",
+      "titleWhite": "Chỉnh Âm Lượng Chia Màn Hình Siêu Tốc",
+      "text": "Ví dụ muốn chỉnh âm lượng từng ứng dụng vượt mức bình thường, hay chia đôi màn hình. Bạn chỉ cần bấm phím tắt là xong trong một giây.",
+      "on_screen_keyword": "XONG TRONG 1 GIÂY",
+      "visual_hint": "Thao tác phím tắt tức thì",
+      "image": "assets/vorssaint_vorssaint-utils_website_workflow.png",
+      "stickers": [
+        {"emoji": "🎯", "text": "VÍ DỤ THẬT", "triggerFrame": 15, "rotate": -5, "top": -24, "left": 30},
+        {"emoji": "⚡", "text": "XONG 1 GIÂY", "triggerFrame": 45, "rotate": 6, "bottom": -24, "right": 30}
+      ]
+    },
+    {
+      "id": 6,
+      "badge": "06 // ĐÈ BẸP CÁCH CŨ",
+      "titleGold": "VƯỢT TRỘI CÁCH CŨ",
+      "titleWhite": "Thay Thế Hàng Tá Ứng Dụng Đắt Đỏ",
+      "text": "Trước đây mua hàng tá ứng dụng mất tiền triệu mỗi năm. Nay bạn có tất cả trong một phần mềm duy nhất, máy chạy nhẹ tênh và cực kỳ mượt mà.",
+      "on_screen_keyword": "TIẾT KIỆM TIỀN TRIỆU",
+      "visual_hint": "Chạy cục bộ, bảo mật 100%",
+      "bullets": [
+        ["Cách cũ: Mua hơn 10 app riêng biệt tốn tiền triệu", "#FFFFFF"],
+        ["Cách mới: Gom trọn vào 1 icon thanh menu", "#FFCC00"],
+        ["Bảo mật: Chạy cục bộ 100%, máy nhẹ tênh", "#FFFFFF"]
+      ],
+      "stickers": [
+        {"emoji": "⏱️", "text": "TIẾT KIỆM TIỀN", "triggerFrame": 15, "rotate": 6, "top": -24, "right": 30},
+        {"emoji": "🚀", "text": "MÁY MƯỢT MÀ", "triggerFrame": 45, "rotate": -6, "bottom": -24, "left": 30}
+      ]
+    },
+    {
+      "id": 7,
+      "badge": "07 // CÀI ĐẶT 0 ĐỒNG",
+      "titleGold": "MIỄN PHÍ TRỌN ĐỜI",
+      "titleWhite": "Cài Đặt Cực Nhanh 1 Dòng",
+      "text": "Dự án mã nguồn mở hoàn toàn miễn phí không tốn một đồng. Bạn có thể cài đặt dễ dàng bằng đúng một dòng lệnh trên máy tính Mac.",
+      "on_screen_keyword": "0 ĐỒNG 1 DÒNG LỆNH",
+      "visual_hint": "Copy lệnh chạy ngay",
+      "command": "brew install --cask vorssaint",
+      "stickers": [
+        {"emoji": "💰", "text": "0 ĐỒNG MIỄN PHÍ", "triggerFrame": 15, "rotate": -6, "top": -24, "left": 30},
+        {"emoji": "💻", "text": "1 DÒNG LỆNH", "triggerFrame": 45, "rotate": 7, "bottom": -24, "right": 30}
+      ]
+    },
+    {
+      "id": 8,
+      "badge": "08 // TRANH LUẬN & BIO",
+      "titleGold": "BẠN DÁM THỬ KHÔNG?",
+      "titleWhite": "Nhóm Chat Tele Ở Link Bio",
+      "text": "Bạn có sẵn sàng gỡ bỏ các ứng dụng đắt tiền để dùng thử không? Tham gia nhóm chat tele của mình ở link trong bio tiktok nhé.",
+      "on_screen_keyword": "LINK TRONG BIO",
+      "visual_hint": "Bình luận và lấy link bio",
+      "bullets": [
+        ["Link tải và hướng dẫn nằm trong BIO TikTok", "#FFCC00"],
+        ["Chia sẻ công cụ Mac và phần mềm AI đỉnh cao", "#FFFFFF"],
+        ["Bình luận ngay ý kiến của bạn bên dưới", "#FFFFFF"]
+      ],
+      "stickers": [
+        {"emoji": "💬", "text": "BÌNH LUẬN NGAY", "triggerFrame": 15, "rotate": -6, "top": -24, "right": 30},
+        {"emoji": "🚀", "text": "TELE TRONG BIO", "triggerFrame": 45, "rotate": 7, "bottom": -24, "right": 30}
+      ]
+    }
+  ],
+  "tiktok_post": {
+    "title": "Người dùng Mac đang tốn tiền triệu vô lý khi chưa biết công cụ mã nguồn mở này?",
+    "caption": "Dự án Vorssaint gom hơn 12 ứng dụng trả phí trên Mac vào đúng 1 icon thanh menu. Hoàn toàn miễn phí 0đ, không theo dõi người dùng! Link nhóm tele trong bio nhé.",
+    "hashtags": ["#ai", "#macbook", "#apple", "#vorssaint", "#github", "#congnghe", "#learnontiktok"],
+    "tiktok_copy_line": "Người dùng Mac đang tốn tiền triệu vô lý khi chưa biết công cụ mã nguồn mở này? #ai #macbook #apple #vorssaint #github #congnghe #learnontiktok"
+  }
+}

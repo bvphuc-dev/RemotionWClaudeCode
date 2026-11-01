@@ -2,7 +2,32 @@ import os
 import re
 import urllib.request
 import json
+import subprocess
 from urllib.parse import urlparse
+
+def _fetch_url_text(url: str, timeout: int = 10) -> str:
+    """Fetch URL content with urllib, fallback to curl.exe to bypass network/model issues."""
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+        with urllib.request.urlopen(req, timeout=timeout) as resp:
+            return resp.read().decode("utf-8", errors="replace")
+    except Exception:
+        pass
+
+    try:
+        res = subprocess.run(
+            ["curl.exe", "-s", "-L", url],
+            capture_output=True,
+            text=True,
+            encoding="utf-8",
+            errors="replace",
+            timeout=timeout
+        )
+        if res.returncode == 0 and res.stdout.strip():
+            return res.stdout
+    except Exception:
+        pass
+    return ""
 
 def parse_repo_url(url: str) -> tuple[str, str]:
     """Extract owner and repo name from GitHub URL or 'owner/repo' format."""
@@ -22,7 +47,6 @@ def fetch_repo_data(url: str, assets_dir: str = "public/assets") -> dict:
     os.makedirs(assets_dir, exist_ok=True)
     slug = f"{owner.lower()}_{repo.lower()}"
 
-    headers = {"User-Agent": "Mozilla/5.0"}
     meta = {
         "owner": owner,
         "repo": repo,
@@ -37,32 +61,21 @@ def fetch_repo_data(url: str, assets_dir: str = "public/assets") -> dict:
 
     # 1. GitHub API Metadata
     api_url = f"https://api.github.com/repos/{owner}/{repo}"
-    try:
-        req = urllib.request.Request(api_url, headers=headers)
-        with urllib.request.urlopen(req, timeout=10) as resp:
-            data = json.loads(resp.read().decode("utf-8"))
+    api_text = _fetch_url_text(api_url)
+    if api_text:
+        try:
+            data = json.loads(api_text)
             meta["stars"] = data.get("stargazers_count", 0)
             meta["description"] = data.get("description", "") or ""
             meta["homepage"] = data.get("homepage", "") or ""
-    except Exception as e:
-        print(f"⚠️ Could not fetch GitHub API: {e}")
+        except Exception as e:
+            print(f"⚠️ Could not parse GitHub API: {e}")
 
     # 2. Raw README.md
-    readme_url = f"https://raw.githubusercontent.com/{owner}/{repo}/main/README.md"
-    try:
-        req = urllib.request.Request(readme_url, headers=headers)
-        with urllib.request.urlopen(req, timeout=10) as resp:
-            readme_text = resp.read().decode("utf-8")
-            meta["readme"] = readme_text
-    except Exception:
-        # Try 'master' branch
-        try:
-            req = urllib.request.Request(f"https://raw.githubusercontent.com/{owner}/{repo}/master/README.md", headers=headers)
-            with urllib.request.urlopen(req, timeout=10) as resp:
-                readme_text = resp.read().decode("utf-8")
-                meta["readme"] = readme_text
-        except Exception as e:
-            print(f"⚠️ Could not fetch README: {e}")
+    readme_text = _fetch_url_text(f"https://raw.githubusercontent.com/{owner}/{repo}/main/README.md")
+    if not readme_text:
+        readme_text = _fetch_url_text(f"https://raw.githubusercontent.com/{owner}/{repo}/master/README.md")
+    meta["readme"] = readme_text
 
     # 3. Detect install command from README
     if meta["readme"]:

@@ -15,4 +15,10 @@ whisper.cpp
 
 # Generated voice files
 public/current_voice.mp3
+*.mp3
+
+# Runtime cache and anti-duplicate log
+.temp/
+.sent_videos.json
+
 

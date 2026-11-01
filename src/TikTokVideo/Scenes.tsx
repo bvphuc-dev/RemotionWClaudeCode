@@ -129,40 +129,42 @@ const Sticker: React.FC<StickerProps> = ({
 
 export const Scene01: React.FC = () => (
   <div style={sceneWrapper}>
-    <div style={badgeStyle}>{"01 // C\u00c2U H\u1eceI L\u1edaN"}</div>
+    <div style={badgeStyle}>{"01 // C\u00d4NG TY \u1ea2O THU NH\u1ece"}</div>
     <div style={cardStyle}>
-      <Sticker emoji="🔥" text={"AI HAY QU\u00caN?"} triggerFrame={15} rotate={-6} top={-24} left={30} />
-      <Sticker emoji="⚡" text={"G\u00c2Y B\u1ea4T NG\u1edc"} triggerFrame={45} rotate={8} bottom={-24} right={30} />
-      <h1 style={titleGold}>{"AI HAY QU\u00caN?"}</h1>
-      <h2 style={titleWhite}>{"Tr\u1ee3 l\u00fd AI b\u1ecb m\u1ea5t tr\u00ed nh\u1edb sau m\u1ed7i phi\u00ean"}</h2>
-      <div style={{ marginTop: 32, fontSize: 80 }}>🔥</div>
+      <Sticker emoji="🔥" text={"6.9K STARS"} triggerFrame={15} rotate={-6} top={-24} left={30} />
+      <Sticker emoji="⚡" text={"\u0110\u1ed8I NG\u0168 \u1ea2O"} triggerFrame={45} rotate={7} bottom={-24} right={30} />
+      <h1 style={titleGold}>{"M\u1ed8T M\u00ccNH \u00d4M H\u1ebeT VI\u1ec6C?"}</h1>
+      <h2 style={titleWhite}>{"\u0110\u1ed9i Ng\u0169 16 Nh\u00e2n Vi\u00ean \u1ea2o Mi\u1ec5n Ph\u00ed"}</h2>
+      <div style={{ marginTop: 24, borderRadius: 20, overflow: "hidden", border: "2px solid #FFCC00" }}>
+        <Img src={staticFile("assets/orkas-ai_orkas_github_repo.png")} style={{ width: 880, display: "block" }} />
+      </div>
     </div>
   </div>
 );
 
 export const Scene02: React.FC = () => (
   <div style={sceneWrapper}>
-    <div style={badgeStyle}>{"02 // D\u1ef0 \u00c1N GITHUB"}</div>
+    <div style={badgeStyle}>{"02 // B\u1ea4T L\u1ef0C C\u00c1CH C\u0168"}</div>
     <div style={cardStyle}>
-      <Sticker emoji="🐙" text={"GITHUB REPO"} triggerFrame={15} rotate={-5} top={-24} left={30} />
-      <Sticker emoji="🚀" text={"CLAUDE MEM"} triggerFrame={45} rotate={6} bottom={-24} right={30} />
-      <h1 style={titleGold}>{"CLAUDE-MEM"}</h1>
-      <h2 style={titleWhite}>{"T\u00e1c Gi\u1ea3: @thedotmack"}</h2>
-      <div style={{ marginTop: 32, fontSize: 80 }}>🐙</div>
+      <Sticker emoji="💸" text={"T\u1ed0N TI\u1ec0N TRI\u1ec6U"} triggerFrame={15} rotate={-7} top={-24} right={30} />
+      <Sticker emoji="⏳" text={"KI\u1ec6T S\u1ee8C"} triggerFrame={45} rotate={6} bottom={-24} left={30} />
+      <h1 style={titleGold}>{"M\u00d2 M\u1eaaM C\u1ea2 NG\u00c0Y"}</h1>
+      <h2 style={titleWhite}>{"Thu\u00ea Ngo\u00e0i T\u1ed1n Ch\u1ee5c Tri\u1ec7u M\u1ed7i Th\u00e1ng"}</h2>
+      <div style={{ marginTop: 32, fontSize: 80 }}>😫</div>
     </div>
   </div>
 );
 
 export const Scene03: React.FC = () => (
   <div style={sceneWrapper}>
-    <div style={badgeStyle}>{"03 // UY T\u00cdN C\u1ed8NG \u0110\u1ed2NG"}</div>
+    <div style={badgeStyle}>{"03 // PH\u00c9P M\u00c0U \u0110\u1edcI TH\u1ef0C"}</div>
     <div style={cardStyle}>
-      <Sticker emoji="⭐" text={"104,471 SAO"} triggerFrame={15} rotate={-7} top={-24} left={30} />
-      <Sticker emoji="🔥" text={"VIRAL GITHUB"} triggerFrame={45} rotate={6} bottom={-24} right={30} />
-      <h1 style={titleGold}>{"\u2b50 104,471 STARS"}</h1>
-      <h2 style={titleWhite}>{"C\u1ed9ng \u0110\u1ed3ng \u0110\u00f3n Nh\u1eadn N\u1ed3ng Nhi\u1ec7t"}</h2>
+      <Sticker emoji="🏢" text={"C\u00d4NG TY \u1ea2O"} triggerFrame={15} rotate={6} top={-24} left={30} />
+      <Sticker emoji="🤖" text={"16 CHUY\u00caN VI\u00caN"} triggerFrame={45} rotate={-6} bottom={-24} right={30} />
+      <h1 style={titleGold}>{"V\u0102N PH\u00d2NG THU NH\u1ece"}</h1>
+      <h2 style={titleWhite}>{"16 Chuy\u00ean Vi\u00ean \u1ea2o Ngay Tr\u00ean M\u00e1y"}</h2>
       <div style={{ marginTop: 24, borderRadius: 20, overflow: "hidden", border: "2px solid #FFCC00" }}>
-        <Img src={staticFile("assets/thedotmack_claude-mem_github_repo.png")} style={{ width: 880, display: "block" }} />
+        <Img src={staticFile("assets/orkas-ai_orkas_asset_2.png")} style={{ width: 880, display: "block" }} />
       </div>
     </div>
   </div>
@@ -170,40 +172,44 @@ export const Scene03: React.FC = () => (
 
 export const Scene04: React.FC = () => (
   <div style={sceneWrapper}>
-    <div style={badgeStyle}>{"04 // N\u00d3 L\u00c0 G\u00cc"}</div>
+    <div style={badgeStyle}>{"04 // V\u00c0O X, RA Y"}</div>
     <div style={cardStyle}>
-      <Sticker emoji="💡" text={"\u0110\u1ecaNH NGH\u0128A"} triggerFrame={15} rotate={-6} top={-24} left={30} />
-      <Sticker emoji="⚡" text={"G\u1eaeN B\u1ed8 NH\u1eda AI"} triggerFrame={45} rotate={7} bottom={-24} right={30} />
-      <h1 style={titleGold}>{"G\u1eaeN B\u1ed8 NH\u1eda AI"}</h1>
-      <h2 style={titleWhite}>{"S\u1ed5 nh\u1edb v\u0129nh vi\u1ec5n cho tr\u1ee3 l\u00fd AI"}</h2>
-      <div style={{ marginTop: 32, fontSize: 80 }}>💡</div>
+      <Sticker emoji="📥" text={"N\u00c9M M\u1ee4C TI\u00caU V\u00c0O"} triggerFrame={15} rotate={-6} top={-24} right={30} />
+      <Sticker emoji="📤" text={"NH\u1eacN T\u1ec6P RA"} triggerFrame={45} rotate={7} bottom={-24} left={30} />
+      <h1 style={titleGold}>{"GIAO VI\u1ec6C T\u1ef0 \u0110\u1ed8NG"}</h1>
+      <h2 style={titleWhite}>{"Ch\u1ec9 Huy T\u1ef1 Chia Vi\u1ec7c Cho C\u1ea3 \u0110\u1ed9i"}</h2>
+      <div style={{ marginTop: 32, fontSize: 80 }}>📋</div>
     </div>
   </div>
 );
 
 export const Scene05: React.FC = () => (
   <div style={sceneWrapper}>
-    <div style={badgeStyle}>{"05 // C\u00c1CH HO\u1ea0T \u0110\u1ed8NG"}</div>
+    <div style={badgeStyle}>{"05 // V\u00cd D\u1ee4 TH\u1ef0C T\u1ebe"}</div>
     <div style={cardStyle}>
-      <Sticker emoji="📥" text={"\u0110\u01afA V\u00c0O X"} triggerFrame={15} rotate={6} top={-24} right={30} />
-      <Sticker emoji="📤" text={"L\u01afU TR\u1eee T\u1ef0 \u0110\u1ed8NG"} triggerFrame={45} rotate={-6} bottom={-24} left={30} />
-      <h1 style={titleGold}>{"L\u01afU TR\u1eee T\u1ef0 \u0110\u1ed8NG"}</h1>
-      <h2 style={titleWhite}>{"T\u1ef1 \u0111\u1ed9ng ghi ch\u00e9p t\u00f3m t\u1eaft ti\u1ebfn \u0111\u1ed9"}</h2>
-      <div style={{ marginTop: 32, fontSize: 80 }}>🔄</div>
+      <Sticker emoji="🎯" text={"30 TRANG T\u00c0I LI\u1ec6U"} triggerFrame={15} rotate={-5} top={-24} left={30} />
+      <Sticker emoji="⚡" text={"3 PH\u00daT XONG SLIDE"} triggerFrame={45} rotate={6} bottom={-24} right={30} />
+      <h1 style={titleGold}>{"K\u1ebeT QU\u1ea2 C\u1ee4 TH\u1ec2"}</h1>
+      <h2 style={titleWhite}>{"Xong B\u00e0i B\u00e1o C\u00e1o Trong V\u00e0i Ph\u00fat"}</h2>
+      <div style={{ marginTop: 24, borderRadius: 20, overflow: "hidden", border: "2px solid #FFCC00" }}>
+        <Img src={staticFile("assets/orkas-ai_orkas_asset_1.png")} style={{ width: 880, display: "block" }} />
+      </div>
     </div>
   </div>
 );
 
 export const Scene06: React.FC = () => (
   <div style={sceneWrapper}>
-    <div style={badgeStyle}>{"06 // V\u00cd D\u1ee4 TH\u1ef0C T\u1ebe"}</div>
+    <div style={badgeStyle}>{"06 // \u0110\u00c8 B\u1eb8P C\u00c1CH C\u0168"}</div>
     <div style={cardStyle}>
-      <Sticker emoji="📊" text={"NH\u1eda R\u00d5 10 L\u1ed6I"} triggerFrame={15} rotate={-6} top={-24} left={30} />
-      <Sticker emoji="✨" text={"K\u1ebeT QU\u1ea2"} triggerFrame={45} rotate={6} bottom={-24} right={30} />
-      <h1 style={titleGold}>{"NH\u1eda R\u00d5 10 L\u1ed6I"}</h1>
-      <h2 style={titleWhite}>{"M\u1edf l\u1ea1i m\u00e1y sau 1 tu\u1ea7n v\u1eabn nh\u1edb chi ti\u1ebft"}</h2>
-      <div style={{ marginTop: 24, borderRadius: 20, overflow: "hidden", border: "2px solid #FFCC00" }}>
-        <Img src={staticFile("assets/thedotmack_claude-mem_website.png")} style={{ width: 880, display: "block" }} />
+      <Sticker emoji="⏱️" text={"TI\u1ebeT KI\u1ec6M 90% GI\u1edc"} triggerFrame={15} rotate={6} top={-24} right={30} />
+      <Sticker emoji="🛡️" text={"B\u1ea2O M\u1eacT C\u1ee4C B\u1ed8"} triggerFrame={45} rotate={-6} bottom={-24} left={30} />
+      <h1 style={titleGold}>{"V\u01af\u1ee2T TR\u1ed8I C\u00c1CH C\u0168"}</h1>
+      <h2 style={titleWhite}>{"D\u1eef Li\u1ec7u N\u1eb1m C\u1ee5c B\u1ed9 An To\u00e0n"}</h2>
+      <div style={{ marginTop: 24, textAlign: "left", width: "100%", padding: "0 40px" }}>
+        <p style={{ color: "#FFFFFF", fontSize: 26, margin: "8px 0", fontWeight: 900 }}>✓ {"C\u00e1ch c\u0169: T\u1ef1 l\u00e0m m\u1ea5t c\u1ea3 ng\u00e0y, thu\u00ea ngo\u00e0i t\u1ed1n k\u00e9m"}</p>
+        <p style={{ color: "#FFCC00", fontSize: 26, margin: "8px 0", fontWeight: 900 }}>✓ {"C\u00e1ch m\u1edbi: 16 chuy\u00ean vi\u00ean \u1ea3o t\u1ef1 \u0111\u1ed9ng ph\u1ed1i h\u1ee3p"}</p>
+        <p style={{ color: "#FFFFFF", fontSize: 26, margin: "8px 0", fontWeight: 900 }}>✓ {"B\u1ea3o m\u1eadt: Ch\u1ea1y c\u1ee5c b\u1ed9 tr\u00ean m\u00e1y, kh\u00f4ng l\u1ed9 d\u1eef li\u1ec7u"}</p>
       </div>
     </div>
   </div>
@@ -211,57 +217,31 @@ export const Scene06: React.FC = () => (
 
 export const Scene07: React.FC = () => (
   <div style={sceneWrapper}>
-    <div style={badgeStyle}>{"07 // D\u00c0NH CHO AI"}</div>
+    <div style={badgeStyle}>{"07 // C\u00c0I \u0110\u1eb6T 0 \u0110\u1ed2NG"}</div>
     <div style={cardStyle}>
-      <Sticker emoji="🎯" text={"KH\u00d4NG C\u1ea6N NH\u1eaeC"} triggerFrame={15} rotate={6} top={-24} right={30} />
-      <Sticker emoji="⚡" text={"\u0110\u00daNG NHU C\u1ea6U"} triggerFrame={45} rotate={-6} bottom={-24} left={30} />
-      <h1 style={titleGold}>{"KH\u00d4NG C\u1ea6N NH\u1eaeC"}</h1>
-      <h2 style={titleWhite}>{"Kh\u00f4ng ph\u1ea3i g\u00f5 l\u1ea1i b\u1ed1i c\u1ea3nh t\u1eeb \u0111\u1ea7u"}</h2>
-      <div style={{ marginTop: 32, fontSize: 80 }}>🎯</div>
+      <Sticker emoji="💰" text={"0 \u0110\u1ed2NG MI\u1ec4N PH\u00cd"} triggerFrame={15} rotate={-6} top={-24} left={30} />
+      <Sticker emoji="💻" text={"MAC & WINDOWS"} triggerFrame={45} rotate={7} bottom={-24} right={30} />
+      <h1 style={titleGold}>{"MI\u1ec4N PH\u00cd TR\u1eccN \u0110\u1edcI"}</h1>
+      <h2 style={titleWhite}>{"T\u1ea3i V\u1ec1 D\u00f9ng Ngay Tr\u00ean M\u00e1y T\u00ednh"}</h2>
+      <div style={{ marginTop: 24, backgroundColor: "#000000", border: "2px solid #FFCC00", borderRadius: 16, padding: "20px 24px", width: "100%", boxShadow: "0 0 24px rgba(255, 204, 0, 0.4)" }}>
+        <code style={{ color: "#FFCC00", fontSize: 28, fontWeight: 900, fontFamily: "monospace" }}>{"git clone https://github.com/Orkas-AI/Orkas.git"}</code>
+      </div>
     </div>
   </div>
 );
 
 export const Scene08: React.FC = () => (
   <div style={sceneWrapper}>
-    <div style={badgeStyle}>{"08 // HO\u00c0N TO\u00c0N MI\u1ec4N PH\u00cd"}</div>
+    <div style={badgeStyle}>{"08 // TRANH LU\u1eacN & BIO"}</div>
     <div style={cardStyle}>
-      <Sticker emoji="💵" text={"0 \u0110\u1ed2NG CHI PH\u00cd"} triggerFrame={15} rotate={7} top={-24} right={30} />
-      <Sticker emoji="🆓" text={"FREE TR\u1eccN \u0110\u1edcI"} triggerFrame={45} rotate={-6} bottom={-24} left={30} />
-      <h1 style={titleGold}>{"0 \u0110\u1ed2NG CHI PH\u00cd"}</h1>
-      <h2 style={titleWhite}>{"Ho\u00e0n To\u00e0n Mi\u1ec5n Ph\u00ed"}</h2>
-      <div style={{ marginTop: 32, fontSize: 80 }}>💰</div>
-    </div>
-  </div>
-);
-
-export const Scene09: React.FC = () => (
-  <div style={sceneWrapper}>
-    <div style={badgeStyle}>{"09 // C\u00c0I \u0110\u1eb6T 1 D\u00d2NG L\u1ec6NH"}</div>
-    <div style={cardStyle}>
-      <Sticker emoji="💻" text={"1 D\u00d2NG L\u1ec6NH"} triggerFrame={15} rotate={-6} top={-24} left={30} />
-      <Sticker emoji="⚡" text={"CH\u1ea0Y NGAY"} triggerFrame={45} rotate={7} bottom={-24} right={30} />
-      <h1 style={titleGold}>{"C\u00c0I \u0110\u1eb6T 1 D\u00d2NG"}</h1>
-      <h2 style={titleWhite}>{"Copy & Ch\u1ea1y Ngay"}</h2>
-      <div style={{ marginTop: 24, backgroundColor: "#000000", border: "2px solid #FFCC00", borderRadius: 16, padding: "20px 24px", width: "100%", boxShadow: "0 0 24px rgba(255, 204, 0, 0.4)" }}>
-        <code style={{ color: "#FFCC00", fontSize: 28, fontWeight: 900, fontFamily: "monospace" }}>{"npx claude-mem install --ide grok-bot"}</code>
-      </div>
-    </div>
-  </div>
-);
-
-export const Scene10: React.FC = () => (
-  <div style={sceneWrapper}>
-    <div style={badgeStyle}>{"10 // THAM GIA TELEGRAM"}</div>
-    <div style={cardStyle}>
-      <Sticker emoji="📌" text={"L\u01afU VIDEO L\u1ea0I"} triggerFrame={15} rotate={-6} top={-24} left={30} />
-      <Sticker emoji="💬" text={"NH\u00d3M CHAT TELE"} triggerFrame={45} rotate={7} bottom={-24} right={30} />
-      <h1 style={titleGold}>{"LINK TRONG BIO"}</h1>
-      <h2 style={titleWhite}>{"Tham Gia Nh\u00f3m Chat Tele"}</h2>
+      <Sticker emoji="💬" text={"B\u00ccNH LU\u1eacN NGAY"} triggerFrame={15} rotate={-6} top={-24} right={30} />
+      <Sticker emoji="🚀" text={"TELE TRONG BIO"} triggerFrame={45} rotate={7} bottom={-24} right={30} />
+      <h1 style={titleGold}>{"B\u1ea0N D\u00c1M TH\u1eec KH\u00d4NG?"}</h1>
+      <h2 style={titleWhite}>{"Nh\u00f3m Chat Tele \u1ede Link Bio"}</h2>
       <div style={{ marginTop: 24, textAlign: "left", width: "100%", padding: "0 40px" }}>
-        <p style={{ color: "#FFCC00", fontSize: 26, margin: "8px 0", fontWeight: 900 }}>✓ {"Link nh\u00f3m n\u1eb1m trong BIO TikTok"}</p>
-        <p style={{ color: "#FFFFFF", fontSize: 26, margin: "8px 0", fontWeight: 900 }}>✓ {"C\u1eadp nh\u1eadt repo AI \u0111\u1ec9nh m\u1ed7i ng\u00e0y"}</p>
-        <p style={{ color: "#FFFFFF", fontSize: 26, margin: "8px 0", fontWeight: 900 }}>✓ {"Th\u1ea3o lu\u1eadn c\u00f9ng c\u1ed9ng \u0111\u1ed3ng coder"}</p>
+        <p style={{ color: "#FFCC00", fontSize: 26, margin: "8px 0", fontWeight: 900 }}>✓ {"Link repo v\u00e0 b\u1ed9 c\u00e0i \u0111\u1eb7t n\u1eb1m trong BIO TikTok"}</p>
+        <p style={{ color: "#FFFFFF", fontSize: 26, margin: "8px 0", fontWeight: 900 }}>✓ {"Kh\u00e1m ph\u00e1 kho c\u00f4ng c\u1ee5 tr\u00ed tu\u1ec7 nh\u00e2n t\u1ea1o mi\u1ec5n ph\u00ed"}</p>
+        <p style={{ color: "#FFFFFF", fontSize: 26, margin: "8px 0", fontWeight: 900 }}>✓ {"B\u00ecnh lu\u1eadn ngay g\u00f3c nh\u00ecn c\u1ee7a b\u1ea1n b\u00ean d\u01b0\u1edbi"}</p>
       </div>
     </div>
   </div>

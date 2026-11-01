@@ -1,0 +1,138 @@
+{
+  "brief": {
+    "what_it_is": "Đội ngũ 16 nhân viên ảo thu nhỏ ngay trên máy tính giúp bạn tự động hoàn thành mọi công việc văn phòng từ viết bài, làm slide đến dựng video",
+    "input": "ném yêu cầu công việc hoặc tài liệu cần làm vào cửa sổ chat",
+    "output": "máy tự phân công cho 16 chuyên viên ảo và trả ra tệp thành phẩm hoàn chỉnh như slide trình chiếu, bài viết, video",
+    "problem": "thuê nhân sự bên ngoài tốn hàng chục triệu mỗi tháng, tự làm một mình thì kiệt sức, dùng từng chatbot riêng lẻ thì phải sao chép qua lại mỏi tay",
+    "concrete_example": "giao việc làm slide báo cáo từ tài liệu dài 30 trang, máy tự phân tích nội dung và trả ra bộ slide đẹp mắt chỉ trong 3 phút",
+    "evidence": "An open-source team of AI agents on your desktop — it turns your goals into finished work and keeps it moving."
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "badge": "01 // CÔNG TY ẢO THU NHỎ",
+      "titleGold": "MỘT MÌNH ÔM HẾT VIỆC?",
+      "titleWhite": "Đội Ngũ 16 Nhân Viên Ảo Miễn Phí",
+      "text": "Bạn đang làm việc một mình và kiệt sức vì phải vừa viết bài, làm slide, lại vừa tự dựng video? Dự án Orkas gần bảy nghìn sao này sẽ giải phóng bạn.",
+      "on_screen_keyword": "16 NHÂN VIÊN ẢO",
+      "visual_hint": "Văn phòng ảo thu nhỏ trên máy tính",
+      "image": "assets/orkas-ai_orkas_github_repo.png",
+      "stickers": [
+        {"emoji": "🔥", "text": "6.9K STARS", "triggerFrame": 15, "rotate": -6, "top": -24, "left": 30},
+        {"emoji": "⚡", "text": "ĐỘI NGŨ ẢO", "triggerFrame": 45, "rotate": 7, "bottom": -24, "right": 30}
+      ]
+    },
+    {
+      "id": 2,
+      "badge": "02 // BẤT LỰC CÁCH CŨ",
+      "titleGold": "MÒ MẪM CẢ NGÀY",
+      "titleWhite": "Thuê Ngoài Tốn Chục Triệu Mỗi Tháng",
+      "text": "Người đi làm thường phải thuê ngoài tốn hàng chục triệu mỗi tháng. Nếu tự làm bằng các công cụ chat riêng lẻ, bạn phải sao chép qua lại cực kỳ mệt mỏi.",
+      "on_screen_keyword": "TỐN KÉM MỆT MỎI",
+      "visual_hint": "Bất lực khi làm thủ công",
+      "centerEmoji": "😫",
+      "stickers": [
+        {"emoji": "💸", "text": "TỐN TIỀN TRIỆU", "triggerFrame": 15, "rotate": -7, "top": -24, "right": 30},
+        {"emoji": "⏳", "text": "KIỆT SỨC", "triggerFrame": 45, "rotate": 6, "bottom": -24, "left": 30}
+      ]
+    },
+    {
+      "id": 3,
+      "badge": "03 // PHÉP MÀU ĐỜI THỰC",
+      "titleGold": "VĂN PHÒNG THU NHỎ",
+      "titleWhite": "16 Chuyên Viên Ảo Ngay Trên Máy",
+      "text": "Orkas chính là một công ty thu nhỏ ngay trên máy tính của bạn. Ứng dụng gom sẵn mười sáu nhân viên ảo chuyên làm slide, viết văn bản và dựng hình ảnh.",
+      "on_screen_keyword": "16 CHUYÊN VIÊN ẢO",
+      "visual_hint": "Đội ngũ chuyên gia sẵn sàng",
+      "image": "assets/orkas-ai_orkas_asset_2.png",
+      "stickers": [
+        {"emoji": "🏢", "text": "CÔNG TY ẢO", "triggerFrame": 15, "rotate": 6, "top": -24, "left": 30},
+        {"emoji": "🤖", "text": "16 CHUYÊN VIÊN", "triggerFrame": 45, "rotate": -6, "bottom": -24, "right": 30}
+      ]
+    },
+    {
+      "id": 4,
+      "badge": "04 // VÀO X, RA Y",
+      "titleGold": "GIAO VIỆC TỰ ĐỘNG",
+      "titleWhite": "Chỉ Huy Tự Chia Việc Cho Cả Đội",
+      "text": "Bạn chỉ cần ném yêu cầu công việc vào, người chỉ huy ảo sẽ tự chia nhỏ các bước. Đội ngũ nhân viên tự động làm việc và gửi lại tệp kết quả.",
+      "on_screen_keyword": "VÀO MỤC TIÊU, RA TỆP",
+      "visual_hint": "Phân công và hoàn thành tự động",
+      "centerEmoji": "📋",
+      "stickers": [
+        {"emoji": "📥", "text": "NÉM MỤC TIÊU VÀO", "triggerFrame": 15, "rotate": -6, "top": -24, "right": 30},
+        {"emoji": "📤", "text": "NHẬN TỆP RA", "triggerFrame": 45, "rotate": 7, "bottom": -24, "left": 30}
+      ]
+    },
+    {
+      "id": 5,
+      "badge": "05 // VÍ DỤ THỰC TẾ",
+      "titleGold": "KẾT QUẢ CỤ THỂ",
+      "titleWhite": "Xong Bài Báo Cáo Trong Vài Phút",
+      "text": "Ví dụ bạn cần bản thuyết trình từ tài liệu dài ba mươi trang. Trợ lý chỉ huy tự giao việc cho thợ làm slide và trả ra bài trình chiếu chỉ trong ba phút.",
+      "on_screen_keyword": "3 PHÚT XONG SLIDE",
+      "visual_hint": "Bản báo cáo hoàn chỉnh",
+      "image": "assets/orkas-ai_orkas_asset_1.png",
+      "stickers": [
+        {"emoji": "🎯", "text": "30 TRANG TÀI LIỆU", "triggerFrame": 15, "rotate": -5, "top": -24, "left": 30},
+        {"emoji": "⚡", "text": "3 PHÚT XONG SLIDE", "triggerFrame": 45, "rotate": 6, "bottom": -24, "right": 30}
+      ]
+    },
+    {
+      "id": 6,
+      "badge": "06 // ĐÈ BẸP CÁCH CŨ",
+      "titleGold": "VƯỢT TRỘI CÁCH CŨ",
+      "titleWhite": "Dữ Liệu Nằm Cục Bộ An Toàn",
+      "text": "Trước đây tự làm mất cả ngày, nay cả đội ngũ ảo tự phối hợp làm thay bạn. Mọi tài liệu công việc đều lưu trên máy tính của bạn, không sợ lộ bí mật.",
+      "on_screen_keyword": "TIẾT KIỆM 90% GIỜ",
+      "visual_hint": "Bảo mật tuyệt đối trên máy",
+      "bullets": [
+        ["Cách cũ: Tự làm mất cả ngày, thuê ngoài tốn kém", "#FFFFFF"],
+        ["Cách mới: 16 chuyên viên ảo tự động phối hợp", "#FFCC00"],
+        ["Bảo mật: Chạy cục bộ trên máy, không lộ dữ liệu", "#FFFFFF"]
+      ],
+      "stickers": [
+        {"emoji": "⏱️", "text": "TIẾT KIỆM 90% GIỜ", "triggerFrame": 15, "rotate": 6, "top": -24, "right": 30},
+        {"emoji": "🛡️", "text": "BẢO MẬT CỤC BỘ", "triggerFrame": 45, "rotate": -6, "bottom": -24, "left": 30}
+      ]
+    },
+    {
+      "id": 7,
+      "badge": "07 // CÀI ĐẶT 0 ĐỒNG",
+      "titleGold": "MIỄN PHÍ TRỌN ĐỜI",
+      "titleWhite": "Tải Về Dùng Ngay Trên Máy Tính",
+      "text": "Dự án mã nguồn mở hoàn toàn miễn phí không tốn một đồng. Bạn có thể tải ngay bản cài đặt cho máy tính Mac hoặc Windows để trải nghiệm ngay hôm nay.",
+      "on_screen_keyword": "0 ĐỒNG MIỄN PHÍ",
+      "visual_hint": "Bản cài đặt máy tính có sẵn",
+      "command": "git clone https://github.com/Orkas-AI/Orkas.git",
+      "stickers": [
+        {"emoji": "💰", "text": "0 ĐỒNG MIỄN PHÍ", "triggerFrame": 15, "rotate": -6, "top": -24, "left": 30},
+        {"emoji": "💻", "text": "MAC & WINDOWS", "triggerFrame": 45, "rotate": 7, "bottom": -24, "right": 30}
+      ]
+    },
+    {
+      "id": 8,
+      "badge": "08 // TRANH LUẬN & BIO",
+      "titleGold": "BẠN DÁM THỬ KHÔNG?",
+      "titleWhite": "Nhóm Chat Tele Ở Link Bio",
+      "text": "Bạn nghĩ công ty nhân viên ảo này có thay thế người thật không? Tham gia nhóm chat tele của mình ở link trong bio tiktok nhé.",
+      "on_screen_keyword": "LINK TRONG BIO",
+      "visual_hint": "Bình luận và lấy link bio",
+      "bullets": [
+        ["Link repo và bộ cài đặt nằm trong BIO TikTok", "#FFCC00"],
+        ["Khám phá kho công cụ trí tuệ nhân tạo miễn phí", "#FFFFFF"],
+        ["Bình luận ngay góc nhìn của bạn bên dưới", "#FFFFFF"]
+      ],
+      "stickers": [
+        {"emoji": "💬", "text": "BÌNH LUẬN NGAY", "triggerFrame": 15, "rotate": -6, "top": -24, "right": 30},
+        {"emoji": "🚀", "text": "TELE TRONG BIO", "triggerFrame": 45, "rotate": 7, "bottom": -24, "right": 30}
+      ]
+    }
+  ],
+  "tiktok_post": {
+    "title": "Dự án mã nguồn mở này sở hữu cả đội ngũ 16 nhân viên ảo làm việc tự động?",
+    "caption": "Orkas - Trợ lý chỉ huy phối hợp 16 chuyên viên ảo tự động hoàn thành công việc ngay trên máy tính của bạn.",
+    "hashtags": ["#ai", "#orkas", "#github", "#coding", "#laptrinh", "#learnontiktok"],
+    "tiktok_copy_line": "Dự án mã nguồn mở này sở hữu cả đội ngũ 16 nhân viên ảo làm việc tự động? #ai #orkas #github #coding #laptrinh #learnontiktok"
+  }
+}

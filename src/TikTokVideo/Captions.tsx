@@ -17,691 +17,1359 @@ interface SubtitleChunk {
 export const SUBTITLE_CHUNKS: SubtitleChunk[] = [
   {
     "from": 0,
-    "to": 102,
+    "to": 259,
     "words": [
       {
-        "text": "CÓ",
+        "text": "BẠN",
         "start": 6,
         "end": 13
       },
       {
-        "text": "PHẢI",
+        "text": "ĐANG",
         "start": 14,
         "end": 21
       },
       {
-        "text": "TRỢ",
+        "text": "LÀM",
         "start": 22,
         "end": 29
       },
       {
-        "text": "LÝ",
+        "text": "VIỆC",
         "start": 30,
         "end": 37
       },
       {
-        "text": "AI",
+        "text": "MỘT",
         "start": 38,
         "end": 45
       },
       {
-        "text": "CỨ",
+        "text": "MÌNH",
         "start": 46,
         "end": 53
       },
       {
-        "text": "TẮT",
+        "text": "VÀ",
         "start": 54,
         "end": 61
       },
       {
-        "text": "ĐI",
+        "text": "KIỆT",
         "start": 62,
         "end": 69
       },
       {
-        "text": "LÀ",
+        "text": "SỨC",
         "start": 70,
         "end": 77
       },
       {
-        "text": "QUÊN",
+        "text": "VÌ",
         "start": 78,
         "end": 85
       },
       {
-        "text": "SẠCH",
+        "text": "PHẢI",
         "start": 86,
         "end": 93
       },
       {
-        "text": "MỌI",
+        "text": "VỪA",
         "start": 94,
         "end": 101
       },
       {
-        "text": "VIỆC",
-        "start": 96,
-        "end": 102
-      }
-    ]
-  },
-  {
-    "from": 102,
-    "to": 195,
-    "words": [
+        "text": "VIẾT",
+        "start": 102,
+        "end": 109
+      },
       {
-        "text": "DỰ",
+        "text": "BÀI",
         "start": 110,
-        "end": 118
+        "end": 117
       },
       {
-        "text": "ÁN",
-        "start": 119,
-        "end": 127
+        "text": "LÀM",
+        "start": 118,
+        "end": 125
       },
       {
-        "text": "CLAUDE",
-        "start": 129,
-        "end": 137
+        "text": "SLIDE",
+        "start": 126,
+        "end": 133
       },
       {
-        "text": "MEM",
-        "start": 138,
-        "end": 146
+        "text": "LẠI",
+        "start": 134,
+        "end": 141
       },
       {
-        "text": "TỪ",
-        "start": 148,
-        "end": 156
+        "text": "VỪA",
+        "start": 142,
+        "end": 149
       },
       {
-        "text": "TÁC",
-        "start": 157,
+        "text": "TỰ",
+        "start": 150,
+        "end": 157
+      },
+      {
+        "text": "DỰNG",
+        "start": 158,
         "end": 165
       },
       {
-        "text": "GIẢ",
+        "text": "VIDEO",
         "start": 166,
-        "end": 174
+        "end": 173
       },
       {
-        "text": "THEDOTMACK",
-        "start": 176,
-        "end": 184
-      }
-    ]
-  },
-  {
-    "from": 195,
-    "to": 285,
-    "words": [
-      {
         "text": "DỰ",
-        "start": 202,
-        "end": 209
+        "start": 174,
+        "end": 181
       },
       {
         "text": "ÁN",
-        "start": 210,
-        "end": 217
+        "start": 182,
+        "end": 189
       },
       {
-        "text": "ĐẠT",
-        "start": 218,
-        "end": 225
+        "text": "ORKAS",
+        "start": 190,
+        "end": 197
       },
       {
-        "text": "HƠN",
-        "start": 226,
-        "end": 233
+        "text": "GẦN",
+        "start": 198,
+        "end": 205
       },
       {
-        "text": "MỘT",
-        "start": 234,
-        "end": 241
-      },
-      {
-        "text": "TRĂM",
-        "start": 242,
-        "end": 249
+        "text": "BẢY",
+        "start": 206,
+        "end": 213
       },
       {
         "text": "NGHÌN",
-        "start": 250,
-        "end": 257
-      },
-      {
-        "text": "NGÔI",
-        "start": 258,
-        "end": 265
+        "start": 214,
+        "end": 221
       },
       {
         "text": "SAO",
-        "start": 266,
-        "end": 273
+        "start": 222,
+        "end": 229
       },
       {
-        "text": "GITHUB",
-        "start": 274,
-        "end": 281
+        "text": "NÀY",
+        "start": 230,
+        "end": 237
+      },
+      {
+        "text": "SẼ",
+        "start": 238,
+        "end": 245
+      },
+      {
+        "text": "GIẢI",
+        "start": 246,
+        "end": 253
+      },
+      {
+        "text": "PHÓNG",
+        "start": 254,
+        "end": 259
+      },
+      {
+        "text": "BẠN",
+        "start": 253,
+        "end": 259
       }
     ]
   },
   {
-    "from": 285,
-    "to": 411,
+    "from": 259,
+    "to": 549,
     "words": [
       {
-        "text": "CLAUDE",
+        "text": "NGƯỜI",
+        "start": 267,
+        "end": 274
+      },
+      {
+        "text": "ĐI",
+        "start": 275,
+        "end": 282
+      },
+      {
+        "text": "LÀM",
+        "start": 283,
+        "end": 290
+      },
+      {
+        "text": "THƯỜNG",
         "start": 291,
         "end": 298
       },
       {
-        "text": "MEM",
+        "text": "PHẢI",
         "start": 299,
         "end": 306
       },
       {
-        "text": "LÀ",
+        "text": "THUÊ",
         "start": 307,
         "end": 314
       },
       {
-        "text": "CÔNG",
+        "text": "NGOÀI",
         "start": 315,
         "end": 322
       },
       {
-        "text": "CỤ",
+        "text": "TỐN",
         "start": 323,
         "end": 330
       },
       {
-        "text": "GIÚP",
+        "text": "HÀNG",
         "start": 331,
         "end": 338
       },
       {
-        "text": "TRỢ",
+        "text": "CHỤC",
         "start": 339,
         "end": 346
       },
       {
-        "text": "LÝ",
+        "text": "TRIỆU",
         "start": 347,
         "end": 354
       },
       {
-        "text": "AI",
+        "text": "MỖI",
         "start": 355,
         "end": 362
       },
       {
-        "text": "NHỚ",
+        "text": "THÁNG",
         "start": 363,
         "end": 370
       },
       {
-        "text": "MỌI",
+        "text": "NẾU",
         "start": 371,
         "end": 378
       },
       {
-        "text": "VIỆC",
+        "text": "TỰ",
         "start": 379,
         "end": 386
       },
       {
-        "text": "BẠN",
+        "text": "LÀM",
         "start": 387,
         "end": 394
       },
       {
-        "text": "LÀM",
+        "text": "BẰNG",
         "start": 395,
         "end": 402
-      }
-    ]
-  },
-  {
-    "from": 411,
-    "to": 531,
-    "words": [
-      {
-        "text": "BẠN",
-        "start": 417,
-        "end": 424
-      },
-      {
-        "text": "NÉM",
-        "start": 425,
-        "end": 432
-      },
-      {
-        "text": "VÀO",
-        "start": 433,
-        "end": 440
       },
       {
         "text": "CÁC",
-        "start": 441,
-        "end": 448
+        "start": 403,
+        "end": 410
       },
       {
-        "text": "PHIÊN",
-        "start": 449,
-        "end": 456
+        "text": "CÔNG",
+        "start": 411,
+        "end": 418
       },
       {
-        "text": "LÀM",
-        "start": 457,
-        "end": 464
+        "text": "CỤ",
+        "start": 419,
+        "end": 426
       },
       {
-        "text": "VIỆC",
-        "start": 465,
-        "end": 472
+        "text": "CHAT",
+        "start": 427,
+        "end": 434
       },
       {
-        "text": "MÁY",
-        "start": 473,
-        "end": 480
+        "text": "RIÊNG",
+        "start": 435,
+        "end": 442
       },
       {
-        "text": "TỰ",
-        "start": 481,
-        "end": 488
+        "text": "LẺ",
+        "start": 443,
+        "end": 450
       },
       {
-        "text": "NHẢ",
-        "start": 489,
-        "end": 496
-      },
-      {
-        "text": "RA",
-        "start": 497,
-        "end": 504
-      },
-      {
-        "text": "SỔ",
-        "start": 505,
-        "end": 512
-      },
-      {
-        "text": "NHỚ",
-        "start": 513,
-        "end": 520
-      },
-      {
-        "text": "CHI",
-        "start": 521,
-        "end": 528
-      },
-      {
-        "text": "TIẾT",
-        "start": 529,
-        "end": 531
-      }
-    ]
-  },
-  {
-    "from": 531,
-    "to": 658,
-    "words": [
-      {
-        "text": "TẮT",
-        "start": 537,
-        "end": 544
-      },
-      {
-        "text": "MÁY",
-        "start": 545,
-        "end": 552
-      },
-      {
-        "text": "MỞ",
-        "start": 553,
-        "end": 560
-      },
-      {
-        "text": "LẠI",
-        "start": 561,
-        "end": 568
-      },
-      {
-        "text": "SAU",
-        "start": 569,
-        "end": 576
-      },
-      {
-        "text": "MỘT",
-        "start": 577,
-        "end": 584
-      },
-      {
-        "text": "TUẦN",
-        "start": 585,
-        "end": 592
-      },
-      {
-        "text": "AI",
-        "start": 593,
-        "end": 600
-      },
-      {
-        "text": "VẪN",
-        "start": 601,
-        "end": 608
-      },
-      {
-        "text": "NHỚ",
-        "start": 609,
-        "end": 616
-      },
-      {
-        "text": "RÕ",
-        "start": 617,
-        "end": 624
-      },
-      {
-        "text": "MƯỜI",
-        "start": 625,
-        "end": 632
-      },
-      {
-        "text": "LỖI",
-        "start": 633,
-        "end": 640
-      },
-      {
-        "text": "VỪA",
-        "start": 641,
-        "end": 648
-      },
-      {
-        "text": "SỬA",
-        "start": 649,
-        "end": 656
-      }
-    ]
-  },
-  {
-    "from": 658,
-    "to": 773,
-    "words": [
-      {
-        "text": "DÀNH",
-        "start": 665,
-        "end": 672
-      },
-      {
-        "text": "CHO",
-        "start": 673,
-        "end": 680
-      },
-      {
-        "text": "NGƯỜI",
-        "start": 681,
-        "end": 688
-      },
-      {
-        "text": "DÙNG",
-        "start": 689,
-        "end": 696
-      },
-      {
-        "text": "AI",
-        "start": 697,
-        "end": 704
-      },
-      {
-        "text": "SỢ",
-        "start": 705,
-        "end": 712
-      },
-      {
-        "text": "CẢNH",
-        "start": 713,
-        "end": 720
-      },
-      {
-        "text": "NGÀY",
-        "start": 721,
-        "end": 728
-      },
-      {
-        "text": "NÀO",
-        "start": 729,
-        "end": 736
-      },
-      {
-        "text": "CŨNG",
-        "start": 737,
-        "end": 744
+        "text": "BẠN",
+        "start": 451,
+        "end": 458
       },
       {
         "text": "PHẢI",
-        "start": 745,
-        "end": 752
+        "start": 459,
+        "end": 466
       },
       {
-        "text": "NHẮC",
-        "start": 753,
-        "end": 760
+        "text": "SAO",
+        "start": 467,
+        "end": 474
+      },
+      {
+        "text": "CHÉP",
+        "start": 475,
+        "end": 482
+      },
+      {
+        "text": "QUA",
+        "start": 483,
+        "end": 490
       },
       {
         "text": "LẠI",
-        "start": 761,
-        "end": 768
+        "start": 491,
+        "end": 498
+      },
+      {
+        "text": "CỰC",
+        "start": 499,
+        "end": 506
+      },
+      {
+        "text": "KỲ",
+        "start": 507,
+        "end": 514
+      },
+      {
+        "text": "MỆT",
+        "start": 515,
+        "end": 522
+      },
+      {
+        "text": "MỎI",
+        "start": 523,
+        "end": 530
       }
     ]
   },
   {
-    "from": 773,
-    "to": 861,
+    "from": 549,
+    "to": 841,
     "words": [
       {
-        "text": "HOÀN",
-        "start": 779,
-        "end": 788
+        "text": "ORKAS",
+        "start": 555,
+        "end": 562
       },
       {
-        "text": "TOÀN",
-        "start": 788,
-        "end": 797
+        "text": "CHÍNH",
+        "start": 563,
+        "end": 570
       },
       {
-        "text": "MIỄN",
-        "start": 798,
-        "end": 807
-      },
-      {
-        "text": "PHÍ",
-        "start": 808,
-        "end": 817
-      },
-      {
-        "text": "KHÔNG",
-        "start": 817,
-        "end": 826
-      },
-      {
-        "text": "TỐN",
-        "start": 826,
-        "end": 835
+        "text": "LÀ",
+        "start": 571,
+        "end": 578
       },
       {
         "text": "MỘT",
-        "start": 836,
-        "end": 845
+        "start": 580,
+        "end": 587
       },
       {
-        "text": "ĐỒNG",
-        "start": 846,
-        "end": 855
+        "text": "CÔNG",
+        "start": 588,
+        "end": 595
+      },
+      {
+        "text": "TY",
+        "start": 596,
+        "end": 603
+      },
+      {
+        "text": "THU",
+        "start": 604,
+        "end": 611
+      },
+      {
+        "text": "NHỎ",
+        "start": 612,
+        "end": 619
+      },
+      {
+        "text": "NGAY",
+        "start": 620,
+        "end": 627
+      },
+      {
+        "text": "TRÊN",
+        "start": 629,
+        "end": 636
+      },
+      {
+        "text": "MÁY",
+        "start": 637,
+        "end": 644
+      },
+      {
+        "text": "TÍNH",
+        "start": 645,
+        "end": 652
+      },
+      {
+        "text": "CỦA",
+        "start": 653,
+        "end": 660
+      },
+      {
+        "text": "BẠN",
+        "start": 661,
+        "end": 668
+      },
+      {
+        "text": "ỨNG",
+        "start": 670,
+        "end": 677
+      },
+      {
+        "text": "DỤNG",
+        "start": 678,
+        "end": 685
+      },
+      {
+        "text": "GOM",
+        "start": 686,
+        "end": 693
+      },
+      {
+        "text": "SẴN",
+        "start": 694,
+        "end": 701
+      },
+      {
+        "text": "MƯỜI",
+        "start": 702,
+        "end": 709
+      },
+      {
+        "text": "SÁU",
+        "start": 710,
+        "end": 717
+      },
+      {
+        "text": "NHÂN",
+        "start": 719,
+        "end": 726
+      },
+      {
+        "text": "VIÊN",
+        "start": 727,
+        "end": 734
+      },
+      {
+        "text": "ẢO",
+        "start": 735,
+        "end": 742
+      },
+      {
+        "text": "CHUYÊN",
+        "start": 743,
+        "end": 750
+      },
+      {
+        "text": "LÀM",
+        "start": 751,
+        "end": 758
+      },
+      {
+        "text": "SLIDE",
+        "start": 760,
+        "end": 767
+      },
+      {
+        "text": "VIẾT",
+        "start": 768,
+        "end": 775
+      },
+      {
+        "text": "VĂN",
+        "start": 776,
+        "end": 783
+      },
+      {
+        "text": "BẢN",
+        "start": 784,
+        "end": 791
+      },
+      {
+        "text": "VÀ",
+        "start": 792,
+        "end": 799
+      },
+      {
+        "text": "DỰNG",
+        "start": 800,
+        "end": 807
+      },
+      {
+        "text": "HÌNH",
+        "start": 809,
+        "end": 816
+      },
+      {
+        "text": "ẢNH",
+        "start": 817,
+        "end": 824
       }
     ]
   },
   {
-    "from": 861,
-    "to": 950,
+    "from": 841,
+    "to": 1126,
     "words": [
       {
-        "text": "CÀI",
+        "text": "BẠN",
+        "start": 847,
+        "end": 854
+      },
+      {
+        "text": "CHỈ",
+        "start": 855,
+        "end": 862
+      },
+      {
+        "text": "CẦN",
+        "start": 863,
+        "end": 870
+      },
+      {
+        "text": "NÉM",
         "start": 871,
         "end": 878
       },
       {
-        "text": "ĐẶT",
+        "text": "YÊU",
         "start": 879,
         "end": 886
       },
       {
-        "text": "MỘT",
+        "text": "CẦU",
         "start": 887,
         "end": 894
       },
       {
-        "text": "DÒNG",
+        "text": "CÔNG",
         "start": 895,
         "end": 902
       },
       {
-        "text": "LỆNH",
+        "text": "VIỆC",
         "start": 903,
         "end": 910
       },
       {
-        "text": "CỰC",
-        "start": 912,
-        "end": 919
+        "text": "VÀO",
+        "start": 911,
+        "end": 918
       },
       {
-        "text": "NHANH",
-        "start": 920,
-        "end": 927
+        "text": "NGƯỜI",
+        "start": 919,
+        "end": 926
       },
       {
-        "text": "BẰNG",
-        "start": 928,
-        "end": 935
+        "text": "CHỈ",
+        "start": 927,
+        "end": 934
       },
       {
-        "text": "NPX",
-        "start": 936,
-        "end": 943
+        "text": "HUY",
+        "start": 935,
+        "end": 942
+      },
+      {
+        "text": "ẢO",
+        "start": 943,
+        "end": 950
+      },
+      {
+        "text": "SẼ",
+        "start": 951,
+        "end": 958
+      },
+      {
+        "text": "TỰ",
+        "start": 959,
+        "end": 966
+      },
+      {
+        "text": "CHIA",
+        "start": 967,
+        "end": 974
+      },
+      {
+        "text": "NHỎ",
+        "start": 975,
+        "end": 982
+      },
+      {
+        "text": "CÁC",
+        "start": 983,
+        "end": 990
+      },
+      {
+        "text": "BƯỚC",
+        "start": 991,
+        "end": 998
+      },
+      {
+        "text": "ĐỘI",
+        "start": 999,
+        "end": 1006
+      },
+      {
+        "text": "NGŨ",
+        "start": 1007,
+        "end": 1014
+      },
+      {
+        "text": "NHÂN",
+        "start": 1015,
+        "end": 1022
+      },
+      {
+        "text": "VIÊN",
+        "start": 1023,
+        "end": 1030
+      },
+      {
+        "text": "TỰ",
+        "start": 1031,
+        "end": 1038
+      },
+      {
+        "text": "ĐỘNG",
+        "start": 1039,
+        "end": 1046
+      },
+      {
+        "text": "LÀM",
+        "start": 1047,
+        "end": 1054
+      },
+      {
+        "text": "VIỆC",
+        "start": 1055,
+        "end": 1062
+      },
+      {
+        "text": "VÀ",
+        "start": 1063,
+        "end": 1070
+      },
+      {
+        "text": "GỬI",
+        "start": 1071,
+        "end": 1078
+      },
+      {
+        "text": "LẠI",
+        "start": 1079,
+        "end": 1086
+      },
+      {
+        "text": "TỆP",
+        "start": 1087,
+        "end": 1094
+      },
+      {
+        "text": "KẾT",
+        "start": 1095,
+        "end": 1102
+      },
+      {
+        "text": "QUẢ",
+        "start": 1103,
+        "end": 1110
       }
     ]
   },
   {
-    "from": 950,
-    "to": 1131,
+    "from": 1126,
+    "to": 1418,
     "words": [
       {
-        "text": "XEM",
-        "start": 956,
-        "end": 963
+        "text": "VÍ",
+        "start": 1132,
+        "end": 1139
       },
       {
-        "text": "HƯỚNG",
-        "start": 964,
-        "end": 971
+        "text": "DỤ",
+        "start": 1140,
+        "end": 1147
       },
       {
-        "text": "DẪN",
-        "start": 972,
-        "end": 979
+        "text": "BẠN",
+        "start": 1148,
+        "end": 1155
       },
       {
-        "text": "CHI",
-        "start": 980,
-        "end": 987
+        "text": "CẦN",
+        "start": 1156,
+        "end": 1163
       },
       {
-        "text": "TIẾT",
-        "start": 988,
-        "end": 995
+        "text": "BẢN",
+        "start": 1164,
+        "end": 1171
+      },
+      {
+        "text": "THUYẾT",
+        "start": 1172,
+        "end": 1179
+      },
+      {
+        "text": "TRÌNH",
+        "start": 1180,
+        "end": 1187
+      },
+      {
+        "text": "TỪ",
+        "start": 1188,
+        "end": 1195
+      },
+      {
+        "text": "TÀI",
+        "start": 1196,
+        "end": 1203
+      },
+      {
+        "text": "LIỆU",
+        "start": 1204,
+        "end": 1211
+      },
+      {
+        "text": "DÀI",
+        "start": 1212,
+        "end": 1219
+      },
+      {
+        "text": "BA",
+        "start": 1220,
+        "end": 1227
+      },
+      {
+        "text": "MƯƠI",
+        "start": 1228,
+        "end": 1235
+      },
+      {
+        "text": "TRANG",
+        "start": 1236,
+        "end": 1243
+      },
+      {
+        "text": "TRỢ",
+        "start": 1244,
+        "end": 1251
+      },
+      {
+        "text": "LÝ",
+        "start": 1252,
+        "end": 1259
+      },
+      {
+        "text": "CHỈ",
+        "start": 1260,
+        "end": 1267
+      },
+      {
+        "text": "HUY",
+        "start": 1268,
+        "end": 1275
+      },
+      {
+        "text": "TỰ",
+        "start": 1276,
+        "end": 1283
+      },
+      {
+        "text": "GIAO",
+        "start": 1284,
+        "end": 1291
+      },
+      {
+        "text": "VIỆC",
+        "start": 1292,
+        "end": 1299
+      },
+      {
+        "text": "CHO",
+        "start": 1300,
+        "end": 1307
+      },
+      {
+        "text": "THỢ",
+        "start": 1308,
+        "end": 1315
+      },
+      {
+        "text": "LÀM",
+        "start": 1316,
+        "end": 1323
+      },
+      {
+        "text": "SLIDE",
+        "start": 1324,
+        "end": 1331
+      },
+      {
+        "text": "VÀ",
+        "start": 1332,
+        "end": 1339
+      },
+      {
+        "text": "TRẢ",
+        "start": 1340,
+        "end": 1347
+      },
+      {
+        "text": "RA",
+        "start": 1348,
+        "end": 1355
+      },
+      {
+        "text": "BÀI",
+        "start": 1356,
+        "end": 1363
+      },
+      {
+        "text": "TRÌNH",
+        "start": 1364,
+        "end": 1371
+      },
+      {
+        "text": "CHIẾU",
+        "start": 1372,
+        "end": 1379
+      },
+      {
+        "text": "CHỈ",
+        "start": 1380,
+        "end": 1387
       },
       {
         "text": "TRONG",
-        "start": 996,
-        "end": 1003
+        "start": 1388,
+        "end": 1395
       },
       {
-        "text": "NHÓM",
-        "start": 1004,
-        "end": 1011
+        "text": "BA",
+        "start": 1396,
+        "end": 1403
       },
       {
-        "text": "NHÉ",
-        "start": 1012,
-        "end": 1019
+        "text": "PHÚT",
+        "start": 1404,
+        "end": 1411
+      }
+    ]
+  },
+  {
+    "from": 1418,
+    "to": 1726,
+    "words": [
+      {
+        "text": "TRƯỚC",
+        "start": 1424,
+        "end": 1432
       },
       {
-        "text": "THAM",
-        "start": 1020,
-        "end": 1027
+        "text": "ĐÂY",
+        "start": 1432,
+        "end": 1440
       },
       {
-        "text": "GIA",
-        "start": 1028,
-        "end": 1035
+        "text": "TỰ",
+        "start": 1441,
+        "end": 1449
       },
       {
-        "text": "NHÓM",
-        "start": 1036,
-        "end": 1043
+        "text": "LÀM",
+        "start": 1449,
+        "end": 1457
       },
       {
-        "text": "CHAT",
-        "start": 1045,
-        "end": 1052
+        "text": "MẤT",
+        "start": 1458,
+        "end": 1466
       },
       {
-        "text": "TELE",
-        "start": 1053,
-        "end": 1060
+        "text": "CẢ",
+        "start": 1466,
+        "end": 1474
+      },
+      {
+        "text": "NGÀY",
+        "start": 1475,
+        "end": 1483
+      },
+      {
+        "text": "NAY",
+        "start": 1483,
+        "end": 1491
+      },
+      {
+        "text": "CẢ",
+        "start": 1492,
+        "end": 1500
+      },
+      {
+        "text": "ĐỘI",
+        "start": 1500,
+        "end": 1508
+      },
+      {
+        "text": "NGŨ",
+        "start": 1509,
+        "end": 1517
+      },
+      {
+        "text": "ẢO",
+        "start": 1517,
+        "end": 1525
+      },
+      {
+        "text": "TỰ",
+        "start": 1525,
+        "end": 1533
+      },
+      {
+        "text": "PHỐI",
+        "start": 1534,
+        "end": 1542
+      },
+      {
+        "text": "HỢP",
+        "start": 1542,
+        "end": 1550
+      },
+      {
+        "text": "LÀM",
+        "start": 1551,
+        "end": 1559
+      },
+      {
+        "text": "THAY",
+        "start": 1559,
+        "end": 1567
+      },
+      {
+        "text": "BẠN",
+        "start": 1568,
+        "end": 1576
+      },
+      {
+        "text": "MỌI",
+        "start": 1576,
+        "end": 1584
+      },
+      {
+        "text": "TÀI",
+        "start": 1585,
+        "end": 1593
+      },
+      {
+        "text": "LIỆU",
+        "start": 1593,
+        "end": 1601
+      },
+      {
+        "text": "CÔNG",
+        "start": 1602,
+        "end": 1610
+      },
+      {
+        "text": "VIỆC",
+        "start": 1610,
+        "end": 1618
+      },
+      {
+        "text": "ĐỀU",
+        "start": 1619,
+        "end": 1627
+      },
+      {
+        "text": "LƯU",
+        "start": 1627,
+        "end": 1635
+      },
+      {
+        "text": "TRÊN",
+        "start": 1635,
+        "end": 1643
+      },
+      {
+        "text": "MÁY",
+        "start": 1644,
+        "end": 1652
+      },
+      {
+        "text": "TÍNH",
+        "start": 1652,
+        "end": 1660
       },
       {
         "text": "CỦA",
-        "start": 1061,
-        "end": 1068
+        "start": 1661,
+        "end": 1669
+      },
+      {
+        "text": "BẠN",
+        "start": 1669,
+        "end": 1677
+      },
+      {
+        "text": "KHÔNG",
+        "start": 1678,
+        "end": 1686
+      },
+      {
+        "text": "SỢ",
+        "start": 1686,
+        "end": 1694
+      },
+      {
+        "text": "LỘ",
+        "start": 1695,
+        "end": 1703
+      },
+      {
+        "text": "BÍ",
+        "start": 1703,
+        "end": 1711
+      },
+      {
+        "text": "MẬT",
+        "start": 1712,
+        "end": 1720
+      }
+    ]
+  },
+  {
+    "from": 1726,
+    "to": 2005,
+    "words": [
+      {
+        "text": "DỰ",
+        "start": 1739,
+        "end": 1746
+      },
+      {
+        "text": "ÁN",
+        "start": 1747,
+        "end": 1754
+      },
+      {
+        "text": "MÃ",
+        "start": 1755,
+        "end": 1762
+      },
+      {
+        "text": "NGUỒN",
+        "start": 1763,
+        "end": 1770
+      },
+      {
+        "text": "MỞ",
+        "start": 1771,
+        "end": 1778
+      },
+      {
+        "text": "HOÀN",
+        "start": 1779,
+        "end": 1786
+      },
+      {
+        "text": "TOÀN",
+        "start": 1787,
+        "end": 1794
+      },
+      {
+        "text": "MIỄN",
+        "start": 1795,
+        "end": 1802
+      },
+      {
+        "text": "PHÍ",
+        "start": 1803,
+        "end": 1810
+      },
+      {
+        "text": "KHÔNG",
+        "start": 1811,
+        "end": 1818
+      },
+      {
+        "text": "TỐN",
+        "start": 1819,
+        "end": 1826
+      },
+      {
+        "text": "MỘT",
+        "start": 1827,
+        "end": 1834
+      },
+      {
+        "text": "ĐỒNG",
+        "start": 1835,
+        "end": 1842
+      },
+      {
+        "text": "BẠN",
+        "start": 1843,
+        "end": 1850
+      },
+      {
+        "text": "CÓ",
+        "start": 1851,
+        "end": 1858
+      },
+      {
+        "text": "THỂ",
+        "start": 1859,
+        "end": 1866
+      },
+      {
+        "text": "TẢI",
+        "start": 1867,
+        "end": 1874
+      },
+      {
+        "text": "NGAY",
+        "start": 1875,
+        "end": 1882
+      },
+      {
+        "text": "BẢN",
+        "start": 1883,
+        "end": 1890
+      },
+      {
+        "text": "CÀI",
+        "start": 1891,
+        "end": 1898
+      },
+      {
+        "text": "ĐẶT",
+        "start": 1899,
+        "end": 1906
+      },
+      {
+        "text": "CHO",
+        "start": 1907,
+        "end": 1914
+      },
+      {
+        "text": "MÁY",
+        "start": 1915,
+        "end": 1922
+      },
+      {
+        "text": "TÍNH",
+        "start": 1923,
+        "end": 1930
+      },
+      {
+        "text": "MAC",
+        "start": 1931,
+        "end": 1938
+      },
+      {
+        "text": "HOẶC",
+        "start": 1939,
+        "end": 1946
+      },
+      {
+        "text": "WINDOWS",
+        "start": 1947,
+        "end": 1954
+      },
+      {
+        "text": "ĐỂ",
+        "start": 1955,
+        "end": 1962
+      },
+      {
+        "text": "TRẢI",
+        "start": 1963,
+        "end": 1970
+      },
+      {
+        "text": "NGHIỆM",
+        "start": 1971,
+        "end": 1978
+      },
+      {
+        "text": "NGAY",
+        "start": 1979,
+        "end": 1986
+      },
+      {
+        "text": "HÔM",
+        "start": 1987,
+        "end": 1994
+      },
+      {
+        "text": "NAY",
+        "start": 1995,
+        "end": 2002
+      }
+    ]
+  },
+  {
+    "from": 2005,
+    "to": 2251,
+    "words": [
+      {
+        "text": "BẠN",
+        "start": 2012,
+        "end": 2019
+      },
+      {
+        "text": "NGHĨ",
+        "start": 2020,
+        "end": 2027
+      },
+      {
+        "text": "CÔNG",
+        "start": 2028,
+        "end": 2035
+      },
+      {
+        "text": "TY",
+        "start": 2037,
+        "end": 2044
+      },
+      {
+        "text": "NHÂN",
+        "start": 2045,
+        "end": 2052
+      },
+      {
+        "text": "VIÊN",
+        "start": 2053,
+        "end": 2060
+      },
+      {
+        "text": "ẢO",
+        "start": 2061,
+        "end": 2068
+      },
+      {
+        "text": "NÀY",
+        "start": 2069,
+        "end": 2076
+      },
+      {
+        "text": "CÓ",
+        "start": 2077,
+        "end": 2084
+      },
+      {
+        "text": "THAY",
+        "start": 2086,
+        "end": 2093
+      },
+      {
+        "text": "THẾ",
+        "start": 2094,
+        "end": 2101
+      },
+      {
+        "text": "NGƯỜI",
+        "start": 2102,
+        "end": 2109
+      },
+      {
+        "text": "THẬT",
+        "start": 2110,
+        "end": 2117
+      },
+      {
+        "text": "KHÔNG",
+        "start": 2118,
+        "end": 2125
+      },
+      {
+        "text": "THAM",
+        "start": 2127,
+        "end": 2134
+      },
+      {
+        "text": "GIA",
+        "start": 2135,
+        "end": 2142
+      },
+      {
+        "text": "NHÓM",
+        "start": 2143,
+        "end": 2150
+      },
+      {
+        "text": "CHAT",
+        "start": 2151,
+        "end": 2158
+      },
+      {
+        "text": "TELE",
+        "start": 2159,
+        "end": 2166
+      },
+      {
+        "text": "CỦA",
+        "start": 2168,
+        "end": 2175
       },
       {
         "text": "MÌNH",
-        "start": 1069,
-        "end": 1076
+        "start": 2176,
+        "end": 2183
       },
       {
         "text": "Ở",
-        "start": 1077,
-        "end": 1084
+        "start": 2184,
+        "end": 2191
       },
       {
         "text": "LINK",
-        "start": 1085,
-        "end": 1092
+        "start": 2192,
+        "end": 2199
       },
       {
         "text": "TRONG",
-        "start": 1093,
-        "end": 1100
+        "start": 2200,
+        "end": 2207
       },
       {
         "text": "BIO",
-        "start": 1101,
-        "end": 1108
+        "start": 2208,
+        "end": 2215
       },
       {
         "text": "TIKTOK",
-        "start": 1109,
-        "end": 1116
+        "start": 2217,
+        "end": 2224
       },
       {
         "text": "NHÉ",
-        "start": 1117,
-        "end": 1124
+        "start": 2225,
+        "end": 2232
       }
     ]
   }

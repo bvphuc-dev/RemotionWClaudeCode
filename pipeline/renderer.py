@@ -31,6 +31,13 @@ def render_video(
     os.makedirs(os.path.dirname(out_raw_mp4) or ".", exist_ok=True)
     os.makedirs(os.path.dirname(out_final_mp4) or ".", exist_ok=True)
 
+    # Ensure TEMP and TMP point to local workspace on Drive F with plenty of space
+    ws_temp = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".temp"))
+    os.makedirs(ws_temp, exist_ok=True)
+    env = os.environ.copy()
+    env["TEMP"] = ws_temp
+    env["TMP"] = ws_temp
+
     t0 = time.time()
     print(f"🎬 Rendering Remotion Composition '{composition_id}' to {out_raw_mp4} (concurrency={concurrency})...")
     render_cmd = [
@@ -40,7 +47,7 @@ def render_video(
         "--concurrency", str(concurrency),
         "--gl", "angle"
     ]
-    sub = subprocess.run(render_cmd, shell=True)
+    sub = subprocess.run(render_cmd, shell=True, env=env)
     if sub.returncode != 0:
         raise RuntimeError(f"Remotion render failed with exit code {sub.returncode}")
 

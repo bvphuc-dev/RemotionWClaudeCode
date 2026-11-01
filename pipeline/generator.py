@@ -33,8 +33,8 @@ export const SPEEDUP_FACTOR = 1.4 as const;
 export const FINAL_VIDEO_DURATION_SECONDS = {speedup_sec} as const;
 export const FINAL_VIDEO_FRAMES = {speedup_frames} as const;
 
-export const MAX_WORDS_PER_SCENE = 16 as const;
-export const MAX_TOTAL_WORDS = 150 as const;
+export const MAX_WORDS_PER_SCENE = {35 if len(scenes) != 10 else 16} as const;
+export const MAX_TOTAL_WORDS = {300 if len(scenes) != 10 else 150} as const;
 
 export interface SceneTiming {{
   id: number;

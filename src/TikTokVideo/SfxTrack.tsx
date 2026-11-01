@@ -2,7 +2,7 @@ import React from "react";
 import { Audio, Sequence, staticFile } from "remotion";
 import { SCENE_TIMINGS } from "./timings";
 
-const STICKER_POP_FRAMES = [15, 45, 117, 147, 210, 240, 300, 330, 426, 456, 546, 576, 673, 703, 788, 818, 876, 906, 965, 995];
+const STICKER_POP_FRAMES = [15, 45, 274, 304, 564, 594, 856, 886, 1141, 1171, 1433, 1463, 1741, 1771, 2020, 2050];
 
 export const SfxTrack: React.FC = () => {
   return (
@@ -30,15 +30,15 @@ export const SfxTrack: React.FC = () => {
       ))}
 
       {/* 3. Terminal typing clicks on Command Scene */}
-      <Sequence from={SCENE_TIMINGS[8].from + 20} durationInFrames={15}>
+      <Sequence from={SCENE_TIMINGS[6].from + 20} durationInFrames={15}>
         <Audio src={staticFile("sfx/click.wav")} volume={0.4} />
       </Sequence>
-      <Sequence from={SCENE_TIMINGS[8].from + 40} durationInFrames={15}>
+      <Sequence from={SCENE_TIMINGS[6].from + 40} durationInFrames={15}>
         <Audio src={staticFile("sfx/click.wav")} volume={0.4} />
       </Sequence>
 
       {/* 4. Bell chime on Telegram CTA Scene */}
-      <Sequence from={SCENE_TIMINGS[9].from + 10} durationInFrames={35}>
+      <Sequence from={SCENE_TIMINGS[7].from + 10} durationInFrames={35}>
         <Audio src={staticFile("sfx/bell.wav")} volume={0.35} />
       </Sequence>
     </>

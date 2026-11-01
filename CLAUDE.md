@@ -74,12 +74,12 @@ Tài liệu hướng dẫn bắt buộc cho Claude Code khi xây dựng các vid
 
 ---
 
-## 2. QUY TRÌNH TẠO VIDEO MỚI (`/new-video`)
+## 2. QUY TRÌNH TẠO VIDEO MỚI (`/newvideoRemotion`)
 
-Khi nhận lệnh làm video mới cho 1 repo GitHub (hoặc khi gõ `/new-video <repo_url>`):
+Khi nhận lệnh làm video mới cho 1 repo GitHub (hoặc khi gõ `/newvideoRemotion <repo_url>`):
 
 ### Bước 1: Thu thập thông tin GitHub
-- Đọc README.md, package.json / requirements.txt.
+- Đọc README.md bằng `curl.exe -s "https://raw.githubusercontent.com/<owner>/<repo>/main/README.md"` hoặc python scraper (CẤM dùng tool WebFetch tránh lỗi upstream model 400).
 - Xác định: Tên repo, tác giả, bài toán cốt lõi, công cụ trả phí mà nó thay thế, tính năng nổi bật, lệnh cài đặt 1 dòng.
 - Chụp/lưu 4-5 ảnh chụp màn hình tĩnh độ nét cao vào `public/assets/`.
 
@@ -136,8 +136,9 @@ Khi nhận lệnh làm video mới cho 1 repo GitHub (hoặc khi gõ `/new-video
 - Kèm trường `"tiktok_post"` (title, caption, hashtags, tiktok_copy_line).
 
 ### Bước 3: Tạo Voice & Dynamic Timings
-- Chạy Edge-TTS (`vi-VN-NamMinhNeural`, `rate="+20%"`).
-- Tạo từng đoạn audio `seg_01.mp3` .. `seg_10.mp3`.
+- Tự động dọn sạch thư mục `temp_voice_segments/`, tuyệt đối không dùng cache audio cũ của repo trước.
+- Luôn tạo mới 100% từng file voice `seg_01.mp3` .. `seg_xx.mp3` qua Edge-TTS (`vi-VN-NamMinhNeural`, `rate="+20%"`).
+- Kịch bản ngắt câu tự nhiên bằng dấu chấm (`.`), tránh dùng câu phức quá dài (> 12 từ không dấu ngắt) để Edge-TTS không bị ngắt kết nối.
 - Nối voice với buffer `0.15s` qua `make_video.py` (hoặc `pipeline/audio.py`).
 - Tự động sinh `src/template/constants.ts` và `src/TikTokVideo/Captions.tsx`.
 
@@ -168,15 +169,6 @@ ffmpeg -i out/videoGoc.mp4 -filter_complex "[0:v]setpts=PTS/1.4[v];[0:a]atempo=1
 ---
 
 ## 3. LỆNH THƯỜNG DÙNG
+- `/newvideoRemotion <repo_url>`: Dựng video 8 Scene cô đặc 90s (~33s VideoLast 1.4x), bình dân hóa cho người mới, tôn vinh điểm mạnh của repo.
 - `npm run dev`: Mở Remotion Studio xem trực tiếp tại `http://localhost:3000`.
 - `npm run validate`: Kiểm tra toàn diện khung hình, thời lượng, voice, sub và SFX.
-
----
-
-## 4. QUY TRÌNH BATCH VIDEO HÀNG LOẠT (`/batch-videos`)
-- Tuyệt đối **CẤM** chạy batch bằng template generic cũ.
-- Mỗi repo trong queue bắt buộc đi qua 4 bước:
-  1. Đọc README repo.
-  2. Trích xuất `project_brief` và viết `<slug>_script.json` chuẩn 10 scene mới (Nó là gì - Đưa gì vào - Nhận gì ra, sub giữ tiếng Anh chuẩn, voice tự động phiên âm tiếng Việt).
-  3. Chạy `.venv\Scripts\python.exe make_video.py --url <repo> --script-json <slug>_script.json` (hoặc chạy toàn bộ danh sách bằng `.venv\Scripts\python.exe batch_video.py` tự dò script).
-  4. Video render 30fps, tăng tốc 1.4x, tự động bắn Telegram bot kèm 1 dòng copy TikTok, sau đó mới tiếp tục repo kế.

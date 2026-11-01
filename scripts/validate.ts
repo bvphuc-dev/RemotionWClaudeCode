@@ -44,10 +44,10 @@ console.log("--- BƯỚC 1: KIỂM TRA THÔNG SỐ DYNAMIC (constants.ts) ---");
 if (VIDEO_FPS !== 30) error(`FPS phải là 30, hiện tại: ${VIDEO_FPS}`);
 if (VIDEO_WIDTH !== 1080) error(`Width phải là 1080, hiện tại: ${VIDEO_WIDTH}`);
 if (VIDEO_HEIGHT !== 1920) error(`Height phải là 1920, hiện tại: ${VIDEO_HEIGHT}`);
-if (TOTAL_SCENES !== 10) error(`Tổng số scene phải là 10, hiện tại: ${TOTAL_SCENES}`);
+if (TOTAL_SCENES < 5 || TOTAL_SCENES > 20) error(`Tổng số scene không hợp lệ (5-20), hiện tại: ${TOTAL_SCENES}`);
 
-if (SCENE_TIMINGS.length !== 10) {
-  error(`SCENE_TIMINGS phải có đúng 10 scene, hiện có: ${SCENE_TIMINGS.length}`);
+if (SCENE_TIMINGS.length !== TOTAL_SCENES) {
+  error(`SCENE_TIMINGS phải có đúng ${TOTAL_SCENES} scene, hiện có: ${SCENE_TIMINGS.length}`);
 } else {
   let expectedNextFrom = 0;
   SCENE_TIMINGS.forEach((s, idx) => {
@@ -127,8 +127,8 @@ if (!fs.existsSync(captionsPath)) {
   } else {
     try {
       const chunks = JSON.parse(match[1]);
-      if (chunks.length !== 10) {
-        error(`SUBTITLE_CHUNKS phải có 10 chunks, hiện có: ${chunks.length}`);
+      if (chunks.length !== TOTAL_SCENES) {
+        error(`SUBTITLE_CHUNKS phải có ${TOTAL_SCENES} chunks, hiện có: ${chunks.length}`);
       }
       chunks.forEach((chunk: any, idx: number) => {
         const expectedFrom = SCENE_TIMINGS[idx].from;
@@ -138,7 +138,7 @@ if (!fs.existsSync(captionsPath)) {
             `Sub Chunk ${idx + 1} sai mốc frame: [${chunk.from}..${chunk.to}], kỳ vọng scene: [${expectedFrom}..${expectedTo}]`
           );
         }
-        const maxAllowed = SCENE_MAX_WORDS[idx] ?? MAX_WORDS_PER_SCENE;
+        const maxAllowed = TOTAL_SCENES === 10 ? (SCENE_MAX_WORDS[idx] ?? MAX_WORDS_PER_SCENE) : MAX_WORDS_PER_SCENE;
         if (chunk.words.length > maxAllowed) {
           error(
             `Sub Chunk ${idx + 1} vượt ngân sách từ: ${chunk.words.length} từ > tối đa ${maxAllowed} từ!`

@@ -1,0 +1,138 @@
+{
+  "brief": {
+    "what_it_is": "Cỗ máy xem tử vi mã nguồn mở giúp bất kỳ ai cũng có thể tự an sao và luận giải vận mệnh chuẩn chính tông",
+    "input": "ngày giờ năm sinh của người dùng",
+    "output": "lá số tử vi hoàn chỉnh mười hai cung kèm bản luận giải chi tiết",
+    "problem": "muốn xem tử vi phải lật sách cổ rối rắm hoặc tốn tiền triệu đi xem thầy mà vẫn bán tín bán nghi",
+    "concrete_example": "kho dữ liệu 675 nghìn lá số mẫu và 20 tỷ chữ luận giải trích xuất từ sách cổ Thiên Kỷ",
+    "evidence": "v4.0 解读数据集——67.5 万张命盘 × 13 维 = 877 万段解读，正文约 204 亿字，解压后 56.6 GB"
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "badge": "01 // SIÊU NĂNG LỰC",
+      "titleGold": "KHO TỬ VI 56GB",
+      "titleWhite": "Kho Tàng Tử Vi Lớn Nhất GitHub",
+      "text": "Cỗ máy xem tử vi mã nguồn mở lớn nhất lịch sử vừa gây bão GitHub với kho dữ liệu khổng lồ năm mươi sáu gigabyte.",
+      "on_screen_keyword": "TỬ VI 56GB GÂY BÃO",
+      "visual_hint": "Kho tàng tử vi lớn nhất lịch sử",
+      "image": "assets/renhuai123_ziwei-doushu_github_repo.png",
+      "stickers": [
+        {"emoji": "🔥", "text": "11.7K STARS", "triggerFrame": 15, "rotate": -6, "top": -24, "left": 30},
+        {"emoji": "📜", "text": "KHO TỬ VI 56GB", "triggerFrame": 45, "rotate": 8, "bottom": -24, "right": 30}
+      ]
+    },
+    {
+      "id": 2,
+      "badge": "02 // NỖI ĐAU NGƯỜI MỚI",
+      "titleGold": "MẤT TIỀN XEM BÓI",
+      "titleWhite": "Lạc Giữa Mớ Sách Cổ Rối Rắm",
+      "text": "Người muốn xem vận mệnh trước đây phải lật từng trang sách cổ dày cộp, hoặc tốn tiền triệu đi xem thầy mà vẫn bán tín bán nghi.",
+      "on_screen_keyword": "TỐN TIỀN XEM BÓI",
+      "visual_hint": "Lạc giữa sách cổ rối rắm",
+      "centerEmoji": "🔮",
+      "stickers": [
+        {"emoji": "💸", "text": "TỐN TIỀN TRIỆU", "triggerFrame": 15, "rotate": -7, "top": -24, "right": 30},
+        {"emoji": "📚", "text": "RỐI RẮM SÁCH CỔ", "triggerFrame": 45, "rotate": 6, "bottom": -24, "left": 30}
+      ]
+    },
+    {
+      "id": 3,
+      "badge": "03 // CỖ MÁY THẦN THÁNH",
+      "titleGold": "CỖ MÁY AN SAO TỰ ĐỘNG",
+      "titleWhite": "Số Hóa Toàn Bộ Trí Tuệ Cổ Truyền",
+      "text": "Dự án này như một vị sư phụ ảo, đưa toàn bộ quy luật an sao bí truyền của cụ Nghê Hải Hạ vào một cỗ máy thông minh.",
+      "on_screen_keyword": "SƯ PHỤ TỬ VI ẢO",
+      "visual_hint": "Hệ thống Thiên Kỷ cổ truyền",
+      "image": "assets/renhuai123_ziwei-doushu_asset_3.png",
+      "stickers": [
+        {"emoji": "🧙‍♂️", "text": "SƯ PHỤ ẢO", "triggerFrame": 15, "rotate": 6, "top": -24, "left": 30},
+        {"emoji": "⭐", "text": "AN SAO CHÍNH TÔNG", "triggerFrame": 45, "rotate": -6, "bottom": -24, "right": 30}
+      ]
+    },
+    {
+      "id": 4,
+      "badge": "04 // VÀO NGÀY SINH, RA LÁ SỐ",
+      "titleGold": "VÀO NGÀY SINH, RA VẬN MỆNH",
+      "titleWhite": "An Sao Tức Thì Không Cần Tính Tay",
+      "text": "Bạn chỉ cần nhập ngày giờ sinh, cỗ máy tự động lập lá số mười hai cung và đối chiếu dữ liệu để nhả ra kết quả trọn đời.",
+      "on_screen_keyword": "NHẬP GIỜ SINH LẬP SỐ",
+      "visual_hint": "Nhập ngày sinh ra ngay 12 cung",
+      "centerEmoji": "✨",
+      "stickers": [
+        {"emoji": "🎂", "text": "VÀO NGÀY SINH", "triggerFrame": 15, "rotate": -6, "top": -24, "right": 30},
+        {"emoji": "📜", "text": "RA LÁ SỐ 12 CUNG", "triggerFrame": 45, "rotate": 7, "bottom": -24, "left": 30}
+      ]
+    },
+    {
+      "id": 5,
+      "badge": "05 // SỐ LIỆU KHỦNG",
+      "titleGold": "675 NGHÌN LÁ SỐ TỬ VI",
+      "titleWhite": "Hơn 20 Tỷ Chữ Luận Giải Chi Tiết",
+      "text": "Kho chứa sáu trăm bảy mươi lăm nghìn lá số mẫu, hai mươi tỷ chữ luận giải, đọc chi tiết từng đường công danh, tài lộc và gia đạo.",
+      "on_screen_keyword": "675 NGHÌN LÁ SỐ",
+      "visual_hint": "Kho 20 tỷ chữ luận giải",
+      "image": "assets/renhuai123_ziwei-doushu_asset_1.png",
+      "stickers": [
+        {"emoji": "📊", "text": "675K LÁ SỐ", "triggerFrame": 15, "rotate": -5, "top": -24, "left": 30},
+        {"emoji": "📖", "text": "20 TỶ CHỮ GIẢI", "triggerFrame": 45, "rotate": 6, "bottom": -24, "right": 30}
+      ]
+    },
+    {
+      "id": 6,
+      "badge": "06 // ĐÈ BẸP CÁCH CŨ",
+      "titleGold": "VƯỢT TRỘI HOÀN TOÀN",
+      "titleWhite": "Chính Xác, Minh Bạch, Không Dấu Nghề",
+      "text": "Không còn lo bị phán bừa trục lợi, mọi công thức tính toán đều công khai minh bạch và cho phép bạn tự tra cứu ngay trên máy.",
+      "on_screen_keyword": "CÔNG KHAI MINH BẠCH",
+      "visual_hint": "Minh bạch 100%, không trục lợi",
+      "bullets": [
+        ["Cách cũ: Đi xem thầy mất tiền triệu, bị dọa nạt", "#FFFFFF"],
+        ["Cách mới: Cỗ máy tính toán chuẩn mực từng giây", "#FFCC00"],
+        ["Minh bạch: Toàn bộ công thức công khai 100%", "#FFFFFF"]
+      ],
+      "stickers": [
+        {"emoji": "🛡️", "text": "KHÔNG TRỤC LỢI", "triggerFrame": 15, "rotate": 6, "top": -24, "right": 30},
+        {"emoji": "💎", "text": "CHÍNH TÔNG CỔ TRUYỀN", "triggerFrame": 45, "rotate": -6, "bottom": -24, "left": 30}
+      ]
+    },
+    {
+      "id": 7,
+      "badge": "07 // HOÀN TOÀN MIỄN PHÍ",
+      "titleGold": "0 ĐỒNG CHI PHÍ",
+      "titleWhite": "Cài Đặt Chạy Ngay 1 Dòng Lệnh",
+      "text": "Dự án này hoàn toàn miễn phí không mất một xu. Bạn có thể tải về máy và dùng ngay chỉ bằng một dòng lệnh.",
+      "on_screen_keyword": "MIỄN PHÍ 0 ĐỒNG",
+      "visual_hint": "Cài đặt chạy ngay",
+      "command": "npm install ziwei-doushu",
+      "stickers": [
+        {"emoji": "💰", "text": "0 ĐỒNG MIỄN PHÍ", "triggerFrame": 15, "rotate": -6, "top": -24, "left": 30},
+        {"emoji": "⚡", "text": "CÀI 1 DÒNG LỆNH", "triggerFrame": 45, "rotate": 7, "bottom": -24, "right": 30}
+      ]
+    },
+    {
+      "id": 8,
+      "badge": "08 // TRANH LUẬN & BIO",
+      "titleGold": "BẠN CÓ TIN TỬ VI KHÔNG?",
+      "titleWhite": "Nhóm Chat Tele Ở Link Bio",
+      "text": "Bạn tin vào số mệnh hay ý chí của con người? Tham gia nhóm chat tele của mình ở link trong bio tiktok nhé.",
+      "on_screen_keyword": "LINK Ở BIO",
+      "visual_hint": "Bình luận thảo luận và link bio",
+      "bullets": [
+        ["Link repo và dữ liệu tử vi nằm trong BIO TikTok", "#FFCC00"],
+        ["Cập nhật các dự án AI và công nghệ độc lạ", "#FFFFFF"],
+        ["Bình luận ngay góc nhìn của bạn bên dưới", "#FFFFFF"]
+      ],
+      "stickers": [
+        {"emoji": "💬", "text": "BÌNH LUẬN NGAY", "triggerFrame": 15, "rotate": -6, "top": -24, "right": 30},
+        {"emoji": "🚀", "text": "TELE TRONG BIO", "triggerFrame": 45, "rotate": 7, "bottom": -24, "right": 30}
+      ]
+    }
+  ],
+  "tiktok_post": {
+    "title": "Cỗ máy xem tử vi mã nguồn mở chứa hơn 20 tỷ chữ gây chấn động mạng xã hội?",
+    "caption": "Dự án ziwei-doushu cực hot trên GitHub với hơn 11,700 sao. Số hóa toàn bộ 675,000 lá số và 56GB luận giải theo cụ Nghê Hải Hạ. Miễn phí 100%. Link tele cộng đồng trong bio nhé!",
+    "hashtags": ["#ai", "#ziweidoushu", "#tuvi", "#github", "#coding", "#huyenhoc", "#learnontiktok"],
+    "tiktok_copy_line": "Cỗ máy xem tử vi mã nguồn mở chứa hơn 20 tỷ chữ gây chấn động mạng xã hội? #ai #ziweidoushu #tuvi #github #coding #huyenhoc #learnontiktok"
+  }
+}

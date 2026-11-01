@@ -5,7 +5,7 @@ import { Captions } from "./Captions";
 import { SfxTrack } from "./SfxTrack";
 import { GridBackground } from "../template/GridBackground";
 import { TOTAL_FRAMES, SCENE_TIMINGS } from "./timings";
-import { Scene01, Scene02, Scene03, Scene04, Scene05, Scene06, Scene07, Scene08, Scene09, Scene10 } from "./Scenes";
+import { Scene01, Scene02, Scene03, Scene04, Scene05, Scene06, Scene07, Scene08 } from "./Scenes";
 
 export const TikTokVideo: React.FC = () => {
   const frame = useCurrentFrame();
@@ -47,8 +47,6 @@ export const TikTokVideo: React.FC = () => {
         <Sequence from={SCENE_TIMINGS[5].from} durationInFrames={SCENE_TIMINGS[5].durationInFrames} name={SCENE_TIMINGS[5].name}><Scene06 /></Sequence>
         <Sequence from={SCENE_TIMINGS[6].from} durationInFrames={SCENE_TIMINGS[6].durationInFrames} name={SCENE_TIMINGS[6].name}><Scene07 /></Sequence>
         <Sequence from={SCENE_TIMINGS[7].from} durationInFrames={SCENE_TIMINGS[7].durationInFrames} name={SCENE_TIMINGS[7].name}><Scene08 /></Sequence>
-        <Sequence from={SCENE_TIMINGS[8].from} durationInFrames={SCENE_TIMINGS[8].durationInFrames} name={SCENE_TIMINGS[8].name}><Scene09 /></Sequence>
-        <Sequence from={SCENE_TIMINGS[9].from} durationInFrames={SCENE_TIMINGS[9].durationInFrames} name={SCENE_TIMINGS[9].name}><Scene10 /></Sequence>
       </div>
 
       <Captions />

@@ -1,8 +1,9 @@
 import asyncio
-import edge_tts
 import os
-import re
+import random
 import subprocess
+import time
+import edge_tts
 
 DEFAULT_VOICE = "vi-VN-NamMinhNeural"
 DEFAULT_RATE = "+20%"
@@ -11,55 +12,48 @@ async def _synth_one_segment(
     seg_num: int,
     text: str,
     temp_dir: str,
-    voice: str,
-    rate: str,
-    sem: asyncio.Semaphore
+    voice: str = DEFAULT_VOICE,
+    rate: str = DEFAULT_RATE
 ) -> dict:
+    """Synthesize a single audio segment using native edge_tts.Communicate with jittered exponential backoff."""
     out_file = os.path.join(temp_dir, f"seg_{seg_num:02d}.mp3")
-    # Stagger slightly to avoid simultaneous WebSocket connection bursts
-    await asyncio.sleep((seg_num - 1) * 0.12)
-    async with sem:
-        success = False
-        last_err = None
-        current_text = text
-        current_rate = rate
-        current_voice = voice
-        for attempt in range(6):
-            try:
-                communicate = edge_tts.Communicate(current_text, current_voice, rate=current_rate)
-                await communicate.save(out_file)
+    if os.path.exists(out_file):
+        try:
+            os.remove(out_file)
+        except Exception:
+            pass
+
+    success = False
+    last_err = ""
+
+    for attempt in range(6):
+        cur_rate = rate if attempt == 0 else "+0%"
+        cur_voice = voice if attempt < 3 else "vi-VN-HoaiMyNeural"
+        try:
+            communicate = edge_tts.Communicate(text, cur_voice, rate=cur_rate)
+            await communicate.save(out_file)
+            if os.path.exists(out_file) and os.path.getsize(out_file) > 2000:
                 success = True
                 break
-            except Exception as e:
-                last_err = e
-                # Fallbacks on failure (handle long/compound English words, isolated acronyms, commas in numbers)
-                if attempt == 0:
-                    current_text = re.sub(r"\bA I code\b", "A I viết code", current_text, flags=re.IGNORECASE)
-                    current_text = re.sub(r"([a-z])([A-Z])", r"\1 \2", current_text)
-                    current_text = re.sub(r"(\d+),(\d+)", r"\1\2", current_text)
-                elif attempt == 1:
-                    def _hyphenate(m):
-                        w = m.group(0)
-                        mid = len(w) // 2
-                        return f"{w[:mid]}-{w[mid:]}"
-                    current_text = re.sub(r"\b[a-zA-Z]{7,}\b", _hyphenate, current_text)
-                elif attempt == 2:
-                    current_rate = "+0%"
-                elif attempt == 3:
-                    current_voice = "vi-VN-HoaiMyNeural"
-                    current_rate = "+0%"
-                await asyncio.sleep(1.5 + attempt * 0.5)
+            else:
+                last_err = f"Output file too small or missing ({os.path.getsize(out_file) if os.path.exists(out_file) else 0} bytes)"
+        except Exception as e:
+            last_err = str(e)
 
-        if not success:
-            raise RuntimeError(f"Edge-TTS failed for seg {seg_num:02d} after 6 attempts: {last_err}")
+        sleep_sec = 2.0 * (attempt + 1) + random.uniform(0.3, 0.9)
+        print(f"   ⚠️ Edge-TTS seg {seg_num:02d} attempt {attempt + 1} throttled ({last_err}), retrying with voice={cur_voice}, rate={cur_rate} in {sleep_sec:.1f}s...")
+        await asyncio.sleep(sleep_sec)
 
-    # Probe duration
+    if not success:
+        raise RuntimeError(f"Edge-TTS failed for seg {seg_num:02d} after 6 attempts: {last_err}")
+
+    # Probe duration using ffprobe
     res = subprocess.run([
         "ffprobe", "-v", "error", "-show_entries", "format=duration",
         "-of", "default=noprint_wrappers=1:nokey=1", out_file
     ], capture_output=True, text=True)
     dur = float(res.stdout.strip())
-    print(f"   ✓ Seg {seg_num:02d} ({dur:.2f}s): {text[:32]}...")
+    print(f"   ✓ Seg {seg_num:02d} ({dur:.2f}s, {os.path.getsize(out_file)} bytes): {text[:36]}...")
     return {
         "id": seg_num,
         "file": out_file,
@@ -67,26 +61,44 @@ async def _synth_one_segment(
         "text": text
     }
 
-async def generate_speech_segments(
+async def _synth_all_segments(
+    scripts: list[str],
+    temp_dir: str,
+    voice: str,
+    rate: str
+) -> list[dict]:
+    segments = []
+    for idx, text in enumerate(scripts):
+        seg = await _synth_one_segment(idx + 1, text, temp_dir, voice=voice, rate=rate)
+        segments.append(seg)
+        await asyncio.sleep(1.0 + random.uniform(0.3, 0.7))
+    segments.sort(key=lambda x: x["id"])
+    return segments
+
+def generate_speech_segments(
     scripts: list[str],
     temp_dir: str = "temp_voice_segments",
     voice: str = DEFAULT_VOICE,
     rate: str = DEFAULT_RATE
 ) -> list[dict]:
-    """Generate 15 speech audio files concurrently via Edge-TTS."""
+    """Generate fresh speech audio files sequentially via Edge-TTS."""
     os.makedirs(temp_dir, exist_ok=True)
-    sem = asyncio.Semaphore(1) # Serial TTS ensures 100% stable connection without socket drops
+    # Purge any stale audio segments from previous video runs
+    for fname in os.listdir(temp_dir):
+        if fname.endswith((".mp3", ".wav", ".txt")):
+            try:
+                os.remove(os.path.join(temp_dir, fname))
+            except Exception:
+                pass
 
-    print(f"🎙️ Generating {len(scripts)} TTS audio segments in parallel ({voice}, rate={rate})...")
-    tasks = [
-        _synth_one_segment(idx + 1, text, temp_dir, voice, rate, sem)
-        for idx, text in enumerate(scripts)
-    ]
-    segments = await asyncio.gather(*tasks)
-    # Ensure sorted by ID 1..15
-    segments.sort(key=lambda x: x["id"])
-    return segments
+    print(f"🎙️ Generating {len(scripts)} fresh TTS audio segments ({voice}, rate={rate})...")
+    return asyncio.run(_synth_all_segments(scripts, temp_dir=temp_dir, voice=voice, rate=rate))
 
-def run_tts(scripts: list[str], temp_dir: str = "temp_voice_segments") -> list[dict]:
-    """Synchronous wrapper for generate_speech_segments."""
-    return asyncio.run(generate_speech_segments(scripts, temp_dir=temp_dir))
+def run_tts(
+    scripts: list[str],
+    temp_dir: str = "temp_voice_segments",
+    voice: str = DEFAULT_VOICE,
+    rate: str = DEFAULT_RATE
+) -> list[dict]:
+    """Synchronous entry point for generate_speech_segments."""
+    return generate_speech_segments(scripts, temp_dir=temp_dir, voice=voice, rate=rate)

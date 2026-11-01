@@ -10,6 +10,15 @@ if sys.stdout and hasattr(sys.stdout, "reconfigure"):
 if sys.stderr and hasattr(sys.stderr, "reconfigure"):
     sys.stderr.reconfigure(encoding="utf-8")
 
+# Route temp & cache directories to Drive F to prevent ENOSPC on Drive C
+workspace_temp = "F:/temp"
+os.makedirs(workspace_temp, exist_ok=True)
+os.environ["TEMP"] = workspace_temp
+os.environ["TMP"] = workspace_temp
+os.environ["HF_HOME"] = "F:/cache/huggingface"
+os.environ["PLAYWRIGHT_BROWSERS_PATH"] = "F:/cache/ms-playwright"
+os.environ["PIP_CACHE_DIR"] = "F:/cache/pip"
+
 from pipeline.scraper import fetch_repo_data
 from pipeline.script_writer import (
     create_default_10_scenes,
@@ -76,7 +85,7 @@ def generate_video(
 
     # Step 3: Edge-TTS synthesis
     print("\n🎙️ STEP 3: Synthesizing Edge-TTS speech segments...")
-    segments = run_tts(voice_scripts)
+    segments = run_tts(voice_scripts, voice=voice, rate=rate)
 
     # Step 4: Assemble dynamic audio track (0.15s pause)
     print("\n🔊 STEP 4: Assembling dynamic audio with 0.15s buffer & loudnorm...")
